@@ -1,0 +1,3237 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Scaphandre documentation\n"
+"POT-Creation-Date: 2024-02-22T12:10:12+01:00\n"
+"PO-Revision-Date: 2024-02-22 14:01+0100\n"
+"Last-Translator: MINASSIAN Alban <alban.minassian@free.fr>\n"
+"Language-Team: French <traduc@traduc.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+
+#: docs_src/SUMMARY.md:1 docs_src/index.md:1
+#: docs_src/how-to_guides/propagate-metrics-hypervisor-to-vm_qemu-kvm.md:3
+msgid "Introduction"
+msgstr "Introduction"
+
+#: docs_src/SUMMARY.md:3
+msgid "Tutorials"
+msgstr "Tutoriels"
+
+#: docs_src/SUMMARY.md:5
+msgid "Getting Started"
+msgstr "Pour démarrer"
+
+#: docs_src/SUMMARY.md:6
+msgid "Installation on GNU/Linux"
+msgstr "Installation sous GNU/Linux"
+
+#: docs_src/SUMMARY.md:7
+msgid "Installation on Windows"
+msgstr "Installation sous Windows"
+
+#: docs_src/SUMMARY.md:8
+msgid "Docker-compose"
+msgstr "Docker-compose"
+
+#: docs_src/SUMMARY.md:9
+msgid "Compilation for GNU/Linux"
+msgstr "Compilation sous GNU/Linux"
+
+#: docs_src/SUMMARY.md:10
+msgid "Compilation for Windows"
+msgstr "Compilation sous Windows"
+
+#: docs_src/SUMMARY.md:11
+msgid ""
+"Power consumption of a Kubernetes cluster with scaphandre, prometheus and "
+"grafana"
+msgstr ""
+"Consommation électrique d'un cluster Kubernetes avec scaphandre, prometheus "
+"et grafana"
+
+#: docs_src/SUMMARY.md:13
+msgid "How-to guides"
+msgstr "Guides pratiques"
+
+#: docs_src/SUMMARY.md:15
+#: docs_src/how-to_guides/propagate-metrics-hypervisor-to-vm_qemu-kvm.md:1
+msgid ""
+"Propagate power consumption metrics from hypervisor to virtual machines "
+"(Qemu/KVM)"
+msgstr ""
+"Propager les mesures de consommation d'énergie de l'hyperviseur aux machines "
+"virtuelles (Qemu/KVM)"
+
+#: docs_src/SUMMARY.md:16
+#: docs_src/how-to_guides/get-process-level-power-in-grafana.md:1
+msgid "Get process-level power consumption in my grafana dashboard"
+msgstr ""
+"Obtenir la consommation d'énergie au niveau du processus dans mon tableau de "
+"bord grafana"
+
+#: docs_src/SUMMARY.md:17
+#: docs_src/how-to_guides/install-prometheuspush-only-rhel.md:1
+msgid ""
+"Install Scaphandre with only Prometheus-push exporter compiled, for "
+"Prometheus Push Gateway, on RHEL 8 and 9"
+msgstr ""
+
+#: docs_src/SUMMARY.md:19
+msgid "Explanations"
+msgstr "Explications"
+
+#: docs_src/SUMMARY.md:21
+msgid "Explanations about host level power and energy metrics"
+msgstr ""
+
+#: docs_src/SUMMARY.md:22
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:1
+msgid "How scaphandre computes per process power consumption"
+msgstr ""
+
+#: docs_src/SUMMARY.md:23 docs_src/explanations/internal-structure.md:1
+msgid "Internal structure"
+msgstr ""
+
+#: docs_src/SUMMARY.md:24 docs_src/explanations/about-containers.md:1
+msgid "About containers"
+msgstr ""
+
+#: docs_src/SUMMARY.md:25
+msgid "About RAPL domains"
+msgstr ""
+
+#: docs_src/SUMMARY.md:27
+msgid "References"
+msgstr ""
+
+#: docs_src/SUMMARY.md:29
+msgid "Metrics available"
+msgstr ""
+
+#: docs_src/SUMMARY.md:31 docs_src/explanations/internal-structure.md:18
+msgid "Exporters"
+msgstr ""
+
+#: docs_src/SUMMARY.md:33 docs_src/references/exporter-json.md:1
+msgid "JSON exporter"
+msgstr ""
+
+#: docs_src/SUMMARY.md:34 docs_src/references/exporter-prometheus.md:1
+msgid "Prometheus exporter"
+msgstr ""
+
+#: docs_src/SUMMARY.md:35
+msgid "Prometheus-push exporter"
+msgstr ""
+
+#: docs_src/SUMMARY.md:36 docs_src/references/exporter-qemu.md:1
+msgid "Qemu exporter"
+msgstr ""
+
+#: docs_src/SUMMARY.md:37 docs_src/references/exporter-riemann.md:1
+msgid "Riemann exporter"
+msgstr ""
+
+#: docs_src/SUMMARY.md:38 docs_src/references/exporter-stdout.md:1
+msgid "Stdout exporter"
+msgstr ""
+
+#: docs_src/SUMMARY.md:39 docs_src/references/exporter-warp10.md:1
+msgid "Warp10 exporter"
+msgstr ""
+
+#: docs_src/SUMMARY.md:41 docs_src/explanations/internal-structure.md:5
+msgid "Sensors"
+msgstr ""
+
+#: docs_src/SUMMARY.md:43 docs_src/references/sensor-msr_rapl.md:1
+msgid "MSR_RAPL sensor"
+msgstr ""
+
+#: docs_src/SUMMARY.md:44
+msgid "PowercapRAPL sensor"
+msgstr ""
+
+#: docs_src/SUMMARY.md:45
+msgid "MSRRAPL sensor"
+msgstr ""
+
+#: docs_src/SUMMARY.md:47
+msgid ""
+"Why this project ? Compatibility Troubleshooting Contributing guide External "
+"references you may be interested in"
+msgstr ""
+
+#: docs_src/index.md:5
+msgid ""
+"Welcome on [Scaphandre](https://github.com/hubblo-org/scaphandre) "
+"documentation."
+msgstr ""
+"Bienvenue sur la documentation [Scaphandre](https://github.com/hubblo-org/"
+"scaphandre)."
+
+#: docs_src/index.md:7
+msgid ""
+"Scaphandre is a **monitoring agent**, dedicated to **energy consumption** "
+"metrics. Its purpose is to help measuring and thus understanding tech "
+"services energy consumption patterns. This is key, in our opinion, to enable "
+"the tech industry to shift towards more sustainability. 💚"
+msgstr ""
+"Scaphandre est un **agent de surveillance**, dédié aux mesures de "
+"**consommation d'énergie**. Son objectif est d'aider à mesurer et donc à "
+"comprendre les modèles de consommation d'énergie des services "
+"technologiques. Ceci est essentiel, à notre avis, pour permettre à "
+"l'industrie technologique d'évoluer vers plus de durabilité. 💚"
+
+#: docs_src/index.md:9
+msgid ""
+"If at this point you think \"why bother ?\", or if you want more details "
+"about this project's motivations, please have a look at the [why](why.md) "
+"section."
+msgstr ""
+"Si à ce stade vous vous dites \"à quoi bon ?\", ou si vous voulez plus de "
+"détails sur les motivations de ce projet, veuillez consulter la section "
+"[pourquoi](why.md)."
+
+#: docs_src/index.md:11
+msgid ""
+"If not and you want to proceed, just directly jump to the [tutorials]"
+"(tutorials/getting_started.md) section."
+msgstr ""
+"Si ce n'est pas le cas et que vous souhaitez poursuivre, passez directement "
+"à la section [tutoriels](tutorials/getting_started.md)."
+
+#: docs_src/index.md:13
+msgid ""
+"If you need more in-depth, use-case oriented instructions, the [how-to "
+"guides](how-to_guides/propagate-metrics-hypervisor-to-vm_qemu-kvm.md) are "
+"here for you."
+msgstr ""
+"Si vous avez besoin d'instructions plus approfondies, orientées vers les cas "
+"d'utilisation, les [guides pratiques](how-to_guides/propagate-metrics-"
+"hypervisor-to-vm_qemu-kvm.md) sont là pour vous."
+
+#: docs_src/index.md:15
+msgid ""
+"[Explanations](explanations/how-scaph-computes-per-process-power-consumption."
+"md) is about theoretical concepts behind scaphandre and the reasons for the "
+"technical choices that have been made so far."
+msgstr ""
+"[Explications](explanations/how-scaph-computes-per-process-power-consumption."
+"md) traite des concepts théoriques qui structurent scaphandre et les raisons "
+"des choix techniques qui ont été faites jusqu'à présent."
+
+#: docs_src/index.md:17
+msgid ""
+"If you are already using, hacking or exploring scaphandre and need precise "
+"informations about one of its components, go to the [references](references/"
+"exporter-prometheus.md) section. (The code documentation itself is [here]"
+"(https://docs.rs/scaphandre/))."
+msgstr ""
+"Si vous êtes déjà en train d'utiliser, de bidouiller ou d'explorer "
+"scaphandre et que vous avez besoin d'informations précises sur l'un de ses "
+"composants, consultez la section [références](references/exporter-prometheus."
+"md). (La documentation du code lui-même se trouve [ici](https://docs.rs/"
+"scaphandre/))."
+
+#: docs_src/tutorials/getting_started.md:1
+msgid "Getting started"
+msgstr "Pour démarrer"
+
+#: docs_src/tutorials/getting_started.md:3
+msgid "To install Scaphandre, depending on your platform, see:"
+msgstr "Pour installer Scaphandre, en fonction de votre plateforme, voir :"
+
+#: docs_src/tutorials/getting_started.md:4
+msgid "[Installation on GNU/Linux](installation-linux.md) section."
+msgstr "[Installation sous GNU/Linux](installation-linux.md) section."
+
+#: docs_src/tutorials/getting_started.md:5
+msgid "[Installation on Windows](installation-windows.md) section."
+msgstr "[Installation sous Windows](installation-windows.md) section."
+
+#: docs_src/tutorials/getting_started.md:7
+msgid ""
+"If you want to contribute or just play with the code and need to compile "
+"Scaphandre, see :"
+msgstr ""
+"Si vous souhaitez contribuer ou simplement jouer avec le code et que vous "
+"avez besoin de compiler Scaphandre, consultez :"
+
+#: docs_src/tutorials/getting_started.md:8
+msgid "[Compilation on GNU/Linux](compilation-linux.md)."
+msgstr "[Compilation sous GNU/Linux](compilation-linux.md)."
+
+#: docs_src/tutorials/getting_started.md:9
+msgid "[Compilation on Windows](compilation-windows.md)."
+msgstr "[Compilation sous Windows](compilation-windows.md)."
+
+#: docs_src/tutorials/getting_started.md:11
+msgid ""
+"Depending on your kernel version, you could need to modprobe the module "
+"intel_rapl or intel_rapl_common first:"
+msgstr ""
+"En fonction de la version de votre noyau, vous pouvez avoir d'abord besoin "
+"de modprobe le module intel_rapl ou intel_rapl_common :"
+
+#: docs_src/tutorials/getting_started.md:15
+#: docs_src/tutorials/installation-linux.md:7
+msgid ""
+"To quickly run scaphandre in your terminal you may use [docker](https://www."
+"docker.com/):"
+msgstr ""
+
+#: docs_src/tutorials/getting_started.md:19
+#: docs_src/tutorials/installation-linux.md:11
+msgid "Or if you downloaded or built a binary, you'd run:"
+msgstr ""
+
+#: docs_src/tutorials/getting_started.md:23
+msgid ""
+"Running scaphandre on Fedora / CentOS Stream / RHEL (or any distribution "
+"using SELinux) with podman"
+msgstr ""
+
+#: docs_src/tutorials/getting_started.md:25
+msgid ""
+"Running scaphandre with podman on a distribution using SELinux may fail "
+"because of access denied to `/proc` files."
+msgstr ""
+
+#: docs_src/tutorials/getting_started.md:27
+msgid "To make it work you should run scaphandre in privileged mode :"
+msgstr ""
+
+#: docs_src/tutorials/getting_started.md:31
+msgid ""
+"You'll find explanation of this requirement here : [\\#106](https://github."
+"com/hubblo-org/scaphandre/issues/106)."
+msgstr ""
+
+#: docs_src/tutorials/getting_started.md:33
+msgid "Output"
+msgstr ""
+
+#: docs_src/tutorials/getting_started.md:35
+msgid ""
+"Here we are using the stdout [exporter](../explanations/internal-structure."
+"md) to print current power consumption usage in the terminal during 15 "
+"seconds."
+msgstr ""
+
+#: docs_src/tutorials/getting_started.md:37
+msgid "You should get an output like:"
+msgstr ""
+
+#: docs_src/tutorials/getting_started.md:39
+msgid ""
+"```\n"
+"Host:\t9.391334 W\tCore\t\tUncore\t\tDRAM\n"
+"Socket0\t9.392    W\t1.497082 W\n"
+"Top 5 consumers:\n"
+"Power\tPID\tExe\n"
+"4.808363 W\t642\t\"/usr/sbin/dockerd\"\n"
+"4.808363 W\t703\t\"/usr/bin/docker-containerd\"\n"
+"4.808363 W\t1028\t\"/usr/local/bin/redis-server\"\n"
+"0 W\t1\t\"/usr/lib/systemd/systemd\"\n"
+"0 W\t2\t\"\"\n"
+"------------------------------------------------------------\n"
+"```"
+msgstr ""
+
+#: docs_src/tutorials/getting_started.md:50
+msgid ""
+"Let's briefly describe what you see here. First Line is the power "
+"consumption of the machine (between the two last measurements). Second line "
+"is the power consumption of the first CPU socket plus the detail by RAPL "
+"Domain. If you have more than one CPU Socket, you'll have multiple _SocketX_ "
+"lines. Then you have the 5 processes consuming the most power during the "
+"last two measurements."
+msgstr ""
+
+#: docs_src/tutorials/getting_started.md:55
+msgid ""
+"If you don't get this output and get an error, jump to the [Troubleshooting]"
+"(../troubleshooting.md) section of the documentation."
+msgstr ""
+
+#: docs_src/tutorials/getting_started.md:57
+msgid "Going further"
+msgstr ""
+
+#: docs_src/tutorials/getting_started.md:59
+msgid ""
+"At that point, you're ready to use scaphandre. The Stdout exporter is very "
+"basic and other exporters should allow you to use and send those metrics the "
+"way you like."
+msgstr ""
+
+#: docs_src/tutorials/getting_started.md:61
+msgid ""
+"The [prometheus exporter](../references/exporter-prometheus.md), for "
+"example, allows you to expose power consumption metrics as an HTTP endpoint "
+"that can be scrapped by a [prometheus](https://prometheus.io) instance:"
+msgstr ""
+
+#: docs_src/tutorials/getting_started.md:65
+msgid "Here is the same command with a simple binary:"
+msgstr ""
+
+#: docs_src/tutorials/getting_started.md:69
+msgid ""
+"To validate that the metrics are available, send an http request from "
+"another terminal:"
+msgstr ""
+
+#: docs_src/tutorials/getting_started.md:71
+msgid ""
+"```\n"
+"curl -s http://localhost:8080/metrics\n"
+"```"
+msgstr ""
+
+#: docs_src/tutorials/getting_started.md:73
+msgid ""
+"[Here](https://metrics.hubblo.org) you can see examples of graphs you can "
+"get thanks to scaphandre, the prometheus exporter, prometheus and [grafana]"
+"(https://grafana.com/)."
+msgstr ""
+
+#: docs_src/tutorials/installation-linux.md:1
+msgid "Installation (GNU/Linux)"
+msgstr ""
+
+#: docs_src/tutorials/installation-linux.md:3
+msgid ""
+"Depending on your kernel version, you could need to modprobe the module "
+"intel_rapl or intel_rapl_common before running scaphandre:"
+msgstr ""
+
+#: docs_src/tutorials/installation-linux.md:15
+msgid ""
+"Here are some other ways to install scaphandre depending on your context:"
+msgstr ""
+
+#: docs_src/tutorials/installation-linux.md:17
+msgid ""
+"[quickly try the project with docker-compose/docker stack](docker-compose.md)"
+msgstr ""
+
+#: docs_src/tutorials/installation-linux.md:18
+msgid "[run scaphandre on kubernetes](kubernetes.md)"
+msgstr ""
+
+#: docs_src/tutorials/installation-linux.md:19
+msgid ""
+"[run scaphandre on RHEL, with prometheus-push mode](../how-to_guides/install-"
+"prometheuspush-only-rhel.md)"
+msgstr ""
+
+#: docs_src/tutorials/installation-linux.md:21
+msgid ""
+"Kudos to contributors who work on system packages, please have a try and/or "
+"contribute to:"
+msgstr ""
+
+#: docs_src/tutorials/installation-linux.md:23
+msgid ""
+"[Debian package](https://github.com/barnumbirr/scaphandre-debian), "
+"maintainer: @barnumbirr"
+msgstr ""
+
+#: docs_src/tutorials/installation-linux.md:24
+msgid ""
+"[NixOS package](https://github.com/mmai/scaphandre-flake), maintainer: @mmai"
+msgstr ""
+
+#: docs_src/tutorials/installation-linux.md:26
+msgid "Other tutorials should come, as:"
+msgstr ""
+
+#: docs_src/tutorials/installation-linux.md:28
+msgid "install scaphandre as a proper systemd service"
+msgstr ""
+
+#: docs_src/tutorials/installation-linux.md:29
+msgid ""
+"scaphandre in your favorite GNU/Linux distribution (need help from packaging "
+"gurus !)"
+msgstr ""
+
+#: docs_src/tutorials/installation-linux.md:30
+msgid "scaphandre on MacOSX"
+msgstr ""
+
+#: docs_src/tutorials/installation-linux.md:31
+msgid "and more..."
+msgstr ""
+
+#: docs_src/tutorials/installation-windows.md:1
+msgid "Install Scaphandre on Windows"
+msgstr ""
+
+#: docs_src/tutorials/installation-windows.md:3
+msgid ""
+"**!! Warning: Windows version of Scaphandre is still in early stage. !!**"
+msgstr ""
+
+#: docs_src/tutorials/installation-windows.md:5
+msgid "Using the installer"
+msgstr ""
+
+#: docs_src/tutorials/installation-windows.md:7
+msgid ""
+"Download the latest exe installer [from the release page](https://github.com/"
+"hubblo-org/scaphandre/releases) and install it **as an administrator**."
+msgstr ""
+
+#: docs_src/tutorials/installation-windows.md:9
+msgid "Configuring a Windows service to run Scaphandre in the background"
+msgstr ""
+
+#: docs_src/tutorials/installation-windows.md:11
+msgid ""
+"For example, to run the prometheus-push exporter in the background and "
+"target the Prometheus Push Gateway server with ip address `198.51.100.5` "
+"using HTTPS on port 443 and a step to send metrics of 45s, without checking "
+"the certificate of the push gateway (remove that option if you have a "
+"properly signed TLS certificate):"
+msgstr ""
+
+#: docs_src/tutorials/installation-windows.md:13
+msgid ""
+"```\n"
+"sc.exe create Scaphandre binPath=\"C:\\Program Files "
+"(x86)\\scaphandre\\scaphandre.exe prometheus-push -H 198.51.100.5 -s 45 -S "
+"https -p 443 --no-tls-check\" DisplayName=Scaphandre start=auto\n"
+"```"
+msgstr ""
+
+#: docs_src/tutorials/installation-windows.md:15
+msgid ""
+"Ensure the service is started in Services.msc, start it by right clicking on "
+"it, then Start, otherwise."
+msgstr ""
+
+#: docs_src/tutorials/installation-windows.md:17
+msgid "To delete the service, you can do it in Services.msc, or: "
+msgstr ""
+
+#: docs_src/tutorials/installation-windows.md:21
+msgid "Using an installer including a development version of the driver"
+msgstr ""
+
+#: docs_src/tutorials/installation-windows.md:23
+msgid ""
+"If you are running a development version of the installer (which probably "
+"means a development version of the [driver](https://github.com/hubblo-org/"
+"windows-rapl-driver/)), you'll need to enable Test Mode on Windows prior to "
+"proceed to this installation, then reboot."
+msgstr ""
+
+#: docs_src/tutorials/installation-windows.md:28
+msgid ""
+"Beware: in this case, activation of test mode **and a reboot** is needed "
+"before anyway."
+msgstr ""
+
+#: docs_src/tutorials/installation-windows.md:30
+msgid ""
+"Once installed, you should be able to run scaphandre from Powershell, by "
+"running :"
+msgstr ""
+
+#: docs_src/tutorials/installation-windows.md:34
+#: docs_src/references/sensor-msr_rapl.md:32
+#: docs_src/references/sensor-powercap_rapl.md:48 docs_src/troubleshooting.md:1
+msgid "Troubleshooting"
+msgstr ""
+
+#: docs_src/tutorials/installation-windows.md:36
+msgid "An error such as"
+msgstr ""
+
+#: docs_src/tutorials/installation-windows.md:40
+msgid ""
+"means that the driver is not properly setup. Check it's state by running:"
+msgstr ""
+
+#: docs_src/tutorials/installation-windows.md:44
+msgid ""
+"If there is not item returned, the installation of the driver encountered an "
+"issue."
+msgstr ""
+
+#: docs_src/tutorials/installation-windows.md:46
+msgid "If the service is STOPPED, there is also something wrong."
+msgstr ""
+
+#: docs_src/tutorials/installation-windows.md:48
+msgid "Compilation"
+msgstr ""
+
+#: docs_src/tutorials/installation-windows.md:50
+msgid ""
+"If you look for compiling Scaphandre and its driver yourself, see "
+"[Compilation for Windows](compilation-windows.md)"
+msgstr ""
+
+#: docs_src/tutorials/docker-compose.md:1
+msgid "Run a complete stack with docker-compose"
+msgstr ""
+
+#: docs_src/tutorials/docker-compose.md:3
+msgid ""
+"If you'd like to try scaphandre and see the data in a decent visualization "
+"tool, there is a docker-compose in the repository to install scaphandre "
+"along side with [prometheus](https://prometheus.io) and [grafana](https://"
+"grafana.com)."
+msgstr ""
+
+#: docs_src/tutorials/docker-compose.md:5
+msgid ""
+"Once you have cloned the repository, just move to the docker-compose folder "
+"and run the stack:"
+msgstr ""
+
+#: docs_src/tutorials/docker-compose.md:10
+msgid ""
+"Be warned: the sample stack runs scaphandre as a privileged container. "
+"Otherwise apparmor or equivalents might complain about ptrace calls on the "
+"host. See [\\#135](https://github.com/hubblo-org/scaphandre/issues/135)."
+msgstr ""
+
+#: docs_src/tutorials/docker-compose.md:12
+msgid ""
+"Grafana will be available at `http://localhost:3000`, the default username "
+"is `admin` and the password is `secret`."
+msgstr ""
+
+#: docs_src/tutorials/docker-compose.md:14
+msgid ""
+"Refresh the dashboard after 30s or enable auto-refresh and you should see "
+"the data filling the graphs."
+msgstr ""
+
+#: docs_src/tutorials/docker-compose.md:16
+msgid ""
+"The `process_filter` textbox on the top of the graph allows you to look at "
+"the power consumption of a single application or service. Type the name of "
+"the program you want to look at and press enter. In the `Filtered process "
+"(process_filter) power, by exe` graph, on the 3rd line, you should now see "
+"the power cosumption of the given program."
+msgstr ""
+
+#: docs_src/tutorials/docker-compose.md:18
+msgid "To remove the stack just run this command in the same folder:"
+msgstr ""
+
+#: docs_src/tutorials/compilation-linux.md:1
+msgid "Compile scaphandre from source (GNU/Linux)"
+msgstr ""
+
+#: docs_src/tutorials/compilation-linux.md:3
+msgid "We recommand using this version of the rust toolchain or later:"
+msgstr ""
+
+#: docs_src/tutorials/compilation-linux.md:10
+msgid ""
+"To be sure to be up to date, you may install rust from the [official website]"
+"(https://www.rust-lang.org/) instead of your package manager."
+msgstr ""
+
+#: docs_src/tutorials/compilation-linux.md:12
+msgid ""
+"To hack _scaph_, or simply be up to date with latest developments, you can "
+"download scaphandre from the main branch:"
+msgstr ""
+
+#: docs_src/tutorials/compilation-linux.md:14
+msgid ""
+"```\n"
+"git clone https://github.com/hubblo-org/scaphandre.git\n"
+"cd scaphandre\n"
+"cargo build # binary path is target/debug/scaphandre\n"
+"```"
+msgstr ""
+
+#: docs_src/tutorials/compilation-linux.md:18
+msgid ""
+"To use the latest code for a true use case, build for release instead of "
+"debug:"
+msgstr ""
+
+#: docs_src/tutorials/compilation-linux.md:22
+msgid "Binary path is `target/release/scaphandre`."
+msgstr ""
+
+#: docs_src/tutorials/compilation-windows.md:1
+msgid "Compilation for Windows (experimental)"
+msgstr ""
+
+#: docs_src/tutorials/compilation-windows.md:3
+msgid ""
+"Scaphandre, on Windows, needs a kernel driver to get the same metrics as it "
+"does with powercap on GNU/Linux. This driver is available on [this "
+"repository](https://github.com/hubblo-org/windows-rapl-driver/). Please "
+"refer to this project to get either pre-compiled binaries (available soon) "
+"or to follow the compilation procedure."
+msgstr ""
+
+#: docs_src/tutorials/compilation-windows.md:5
+msgid ""
+"![Scaphandre's dependencies on Windows and GNU/Linux](https://repository-"
+"images.githubusercontent.com/421079628/f695abc0-c8e6-46a3-a6f4-6c7c0f617b87)"
+msgstr ""
+
+#: docs_src/tutorials/compilation-windows.md:7
+msgid ""
+"Once you have a working driver, you can compile Scaphandre, with the Rust "
+"for Windows usual toolkit."
+msgstr ""
+
+#: docs_src/tutorials/compilation-windows.md:9
+msgid ""
+"For now, all Scaphandre features are not supported on windows. Use the "
+"following command line to build the binary :"
+msgstr ""
+
+#: docs_src/tutorials/compilation-windows.md:11
+msgid ""
+"```\n"
+"cargo build --no-default-features --features \"prometheus json riemann\"\n"
+"```"
+msgstr ""
+
+#: docs_src/tutorials/compilation-windows.md:15
+msgid ""
+"Don't forget to add the `--release` flag to build a binary suited for more "
+"than test and debug usecases."
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:1
+msgid "Kubernetes"
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:3
+msgid ""
+"This tutorial uses [Helm](https://helm.sh/docs/intro/quickstart/) to install "
+"Scaphandre, Prometheus and Grafana."
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:6
+msgid "Install Scaphandre"
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:8
+msgid ""
+"First we install Scaphandre which runs as a daemon set which creates a pod "
+"on each node for collecting the metrics. The helm chart is not in a repo, it "
+"needs to be installed from the source code."
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:12
+msgid ""
+"```\n"
+"git clone https://github.com/hubblo-org/scaphandre\n"
+"cd scaphandre\n"
+"helm install scaphandre helm/scaphandre\n"
+"```"
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:15
+msgid "Parameters"
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:16
+msgid "Service monitor parameters"
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:18
+msgid "Name"
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:18
+msgid "Description"
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:18
+msgid "Value"
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:20
+msgid "`serviceMonitor.enabled`"
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:20
+msgid ""
+"Create ServiceMonitor Resource for scraping metrics using PrometheusOperator"
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:20
+msgid "`false`"
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:21
+msgid "`serviceMonitor.namespace`"
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:21
+msgid ""
+"The namespace in which the ServiceMonitor will be created   (if not set, "
+"default to namespace on which this chart is installed)"
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:21
+msgid "`\"\"`"
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:22
+msgid "`serviceMonitor.interval`"
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:22
+msgid "The interval at which metrics should be scraped"
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:22
+msgid "`1m`"
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:24
+msgid "Install Prometheus"
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:26
+msgid ""
+"Next we will install Prometheus which will scrape the metrics generated by "
+"Scaphandre."
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:28
+msgid ""
+"```\n"
+"helm repo add prometheus-community https://prometheus-community.github.io/"
+"helm-charts\n"
+"helm repo add kube-state-metrics https://kubernetes.github.io/kube-state-"
+"metrics\n"
+"helm repo update\n"
+"\n"
+"helm install prometheus prometheus-community/prometheus \\\n"
+"--set alertmanager.persistentVolume.enabled=false \\\n"
+"--set server.persistentVolume.enabled=false\n"
+"```"
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:36
+msgid ""
+"This setup should only be used for testing as the Prometheus data is not "
+"persisted if the pods are deleted."
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:39
+msgid ""
+"You can access the Prometheus web UI by creating a port forwarding "
+"connection."
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:43
+msgid "Install Grafana"
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:45
+msgid "Create a configmap to store the Grafana dashboard."
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:50
+msgid "Install Grafana."
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:52
+msgid ""
+"```\n"
+"helm repo add grafana https://grafana.github.io/helm-charts\n"
+"helm repo update\n"
+"\n"
+"helm install grafana grafana/grafana --values docs_src/tutorials/grafana-"
+"helm-values.yaml\n"
+"```"
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:57
+msgid "Get the Grafana web UI password which is randomly generated."
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:59
+msgid ""
+"```\n"
+"kubectl get secret grafana -o jsonpath=\"{.data.admin-password}\" | base64 --"
+"decode\n"
+"```"
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:61
+msgid "Create a port forwarding connection to the Grafana pod."
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:65
+msgid ""
+"Open Grafana in your browser at http://localhost:3000 the username is admin."
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:67
+msgid "Cleaning up"
+msgstr ""
+
+#: docs_src/tutorials/kubernetes.md:69
+msgid "Deleting the Helm releases will remove all the resources we created."
+msgstr ""
+
+#: docs_src/how-to_guides/propagate-metrics-hypervisor-to-vm_qemu-kvm.md:5
+msgid ""
+"A major pain point in measuring power consumption is doing so inside a "
+"virtual machine. A virtual machine usually doesn't have access to power "
+"metrics."
+msgstr ""
+
+#: docs_src/how-to_guides/propagate-metrics-hypervisor-to-vm_qemu-kvm.md:7
+msgid ""
+"Scaphandre aims at solving that by enabling a communication between a "
+"scaphandre instance **on the hypervisor/bare metal machine** and **another "
+"one** running **on the virtual machine**. The scaphandre agent on the "
+"hypervisor will **compute the metrics meaningful for that virtual machine** "
+"and the one **on the VM access those metrics** to allow its user/"
+"administrator to use the data as if they had access to power metrics in the "
+"first place (as if they were on a bare metal machine)."
+msgstr ""
+
+#: docs_src/how-to_guides/propagate-metrics-hypervisor-to-vm_qemu-kvm.md:10
+msgid ""
+"This allows to break opacity in a virtualization context, if you have access "
+"to the hypervisor, or in a  public cloud context if the provider uses "
+"scaphandre on its hypervisors."
+msgstr ""
+
+#: docs_src/how-to_guides/propagate-metrics-hypervisor-to-vm_qemu-kvm.md:14
+msgid "How to"
+msgstr ""
+
+#: docs_src/how-to_guides/propagate-metrics-hypervisor-to-vm_qemu-kvm.md:16
+msgid "This is working on Qemu/KVM hypervisors only."
+msgstr ""
+
+#: docs_src/how-to_guides/propagate-metrics-hypervisor-to-vm_qemu-kvm.md:18
+msgid ""
+"The idea is to run the agent on the hypervisor, with the [qemu exporter](../"
+"references/exporter-qemu.md):"
+msgstr ""
+
+#: docs_src/how-to_guides/propagate-metrics-hypervisor-to-vm_qemu-kvm.md:23
+msgid ""
+"More examples for a production ready setup will be added soon (systemd "
+"service, docker container, ...). If you think the documentation needs a "
+"refresh now, please [contribute](https://github.com/hubblo-org/scaphandre/"
+"pulls) :)"
+msgstr ""
+
+#: docs_src/how-to_guides/propagate-metrics-hypervisor-to-vm_qemu-kvm.md:25
+msgid ""
+"For each virtual machine you want to give access to its metrics, create a "
+"[tmpfs](https://en.wikipedia.org/wiki/Tmpfs) mountpoint:"
+msgstr ""
+
+#: docs_src/how-to_guides/propagate-metrics-hypervisor-to-vm_qemu-kvm.md:30
+msgid ""
+"In the definition of the virtual machine (here we are using libvirt), ensure "
+"you have a filesystem configuration to give access to the mountpoint:"
+msgstr ""
+
+#: docs_src/how-to_guides/propagate-metrics-hypervisor-to-vm_qemu-kvm.md:35
+msgid ""
+"Then add this filesystem configuration block inside the `<devices></"
+"devices>` block:"
+msgstr ""
+
+#: docs_src/how-to_guides/propagate-metrics-hypervisor-to-vm_qemu-kvm.md:44
+msgid "Save and (re)start the virtual machine."
+msgstr ""
+
+#: docs_src/how-to_guides/propagate-metrics-hypervisor-to-vm_qemu-kvm.md:46
+msgid ""
+"If you get this error: \"error: unsupported configuration: 'virtiofs' "
+"requires shared memory\", you might add this configuration section to the "
+"`<domain>` section."
+msgstr ""
+
+#: docs_src/how-to_guides/propagate-metrics-hypervisor-to-vm_qemu-kvm.md:54
+msgid "Then connect to the virtual machine and mount the filesystem:"
+msgstr ""
+
+#: docs_src/how-to_guides/propagate-metrics-hypervisor-to-vm_qemu-kvm.md:59
+msgid ""
+"You can now run scaphandre to export the metrics with the exporter of your "
+"choice (here prometheus):"
+msgstr ""
+
+#: docs_src/how-to_guides/propagate-metrics-hypervisor-to-vm_qemu-kvm.md:64
+msgid ""
+"Please refer to the [qemu exporter](../references/exporter-qemu.md) "
+"reference for more details."
+msgstr ""
+
+#: docs_src/how-to_guides/propagate-metrics-hypervisor-to-vm_qemu-kvm.md:66
+msgid ""
+"**Note:** This how to is only suitable for a \"manual\" use case. For all "
+"automated systems like openstack or proxmox, some more work needs to be done "
+"to make the integration of those steps easier."
+msgstr ""
+
+#: docs_src/how-to_guides/get-process-level-power-in-grafana.md:3
+msgid ""
+"Now we'll see how to get valuable data in a dashboard. Let's say you want to "
+"track the power consumption of a given process or application in a dashboard "
+"and eventually set thresholds on it. WHat do you need to get that subset of "
+"the power consumption of the host visually ?"
+msgstr ""
+
+#: docs_src/how-to_guides/get-process-level-power-in-grafana.md:5
+msgid "You need basically 3 components for that:"
+msgstr ""
+
+#: docs_src/how-to_guides/get-process-level-power-in-grafana.md:6
+msgid ""
+"scaphandre running with the [prometheus exporter](../references/exporter-"
+"prometheus.md)"
+msgstr ""
+
+#: docs_src/how-to_guides/get-process-level-power-in-grafana.md:7
+msgid "[prometheus](https://prometheus.io)"
+msgstr ""
+
+#: docs_src/how-to_guides/get-process-level-power-in-grafana.md:8
+msgid "[grafana](https://grafana.com)"
+msgstr ""
+
+#: docs_src/how-to_guides/get-process-level-power-in-grafana.md:10
+msgid ""
+"We'll say that you already have a running prometheus server and an available "
+"grafana instance and that you have added prometheus as a datasource in "
+"grafana."
+msgstr ""
+
+#: docs_src/how-to_guides/get-process-level-power-in-grafana.md:12
+msgid ""
+"How to get metrics per process as you may see [here](https://metrics.hubblo."
+"org) ?"
+msgstr ""
+
+#: docs_src/how-to_guides/get-process-level-power-in-grafana.md:14
+msgid ""
+"The metric that I need from the prometheus exporter to do that is: "
+"`scaph_process_power_consumption_microwatts`. This metric is a wallet for "
+"the power consumption of all the running processes on the host at a given "
+"time."
+msgstr ""
+
+#: docs_src/how-to_guides/get-process-level-power-in-grafana.md:16
+msgid ""
+"This is a prometheus metrics, so you have labels to filter on the processes "
+"you are interested in. Currently the available labels are: `instance`, "
+"`exe`, `job` and `pid`."
+msgstr ""
+
+#: docs_src/how-to_guides/get-process-level-power-in-grafana.md:18
+msgid ""
+"If I want to get power consumption (in Watts) for all processes related to "
+"[nginx](https://nginx.org/) running on a host with ip 10.0.0.9 I may use "
+"that query, in grafana, based on the prometheus datasource:"
+msgstr ""
+
+#: docs_src/how-to_guides/get-process-level-power-in-grafana.md:20
+msgid ""
+"```\n"
+"<!-- mdbook-xgettext:skip -->\n"
+"scaph_process_power_consumption_microwatts{cmdline=~\".*nginx.*\", "
+"instance=\"10.0.0.9:8080\"} / 1000000\n"
+"```"
+msgstr ""
+
+#: docs_src/how-to_guides/get-process-level-power-in-grafana.md:23
+msgid ""
+"Here we assume that scaphandre/the prometheus exporter is running on port "
+"number `8080`."
+msgstr ""
+
+#: docs_src/how-to_guides/get-process-level-power-in-grafana.md:25
+msgid "Here is how it looks, creating a panel in grafana:"
+msgstr ""
+
+#: docs_src/how-to_guides/get-process-level-power-in-grafana.md:27
+msgid "![](../grafana-edit.png)"
+msgstr ""
+
+#: docs_src/how-to_guides/get-process-level-power-in-grafana.md:29
+msgid ""
+"Those labels are explained in much more detail [here](../references/exporter-"
+"prometheus.md#scaph_process_power_consumption_microwatts)."
+msgstr ""
+
+#: docs_src/how-to_guides/install-prometheuspush-only-rhel.md:3
+msgid "Manual installation"
+msgstr ""
+
+#: docs_src/how-to_guides/install-prometheuspush-only-rhel.md:5
+msgid ""
+"Scaphandre can be compiled with a limited set of features. You have the "
+"choice to only install Scaphandre with prometheus-push exporter (alongside "
+"with stdout and json exporters, which might be useful locally)."
+msgstr ""
+
+#: docs_src/how-to_guides/install-prometheuspush-only-rhel.md:7
+msgid ""
+"RPM packages containing only those features are provided for RHEL 8 and 9 :"
+msgstr ""
+
+#: docs_src/how-to_guides/install-prometheuspush-only-rhel.md:8
+msgid ""
+"[RPM package for RHEL8](https://scaphandre.s3.fr-par.scw.cloud/x86_64/"
+"scaphandre-prometheuspush-dev0.5.18-1.el8.x86_64.rpm)"
+msgstr ""
+
+#: docs_src/how-to_guides/install-prometheuspush-only-rhel.md:9
+msgid ""
+"[RPM package for RHEL9](https://scaphandre.s3.fr-par.scw.cloud/x86_64/"
+"scaphandre-prometheuspush-dev0.5.18-1.el9.x86_64.rpm)"
+msgstr ""
+
+#: docs_src/how-to_guides/install-prometheuspush-only-rhel.md:11
+msgid ""
+"You can download it and install it just providing the right URL to dnf :"
+msgstr ""
+
+#: docs_src/how-to_guides/install-prometheuspush-only-rhel.md:16
+msgid ""
+"Then you'll probably need to change its configuration to target the "
+"appropriate Push Gateway server. Edit the configuration file :"
+msgstr ""
+
+#: docs_src/how-to_guides/install-prometheuspush-only-rhel.md:21
+msgid "Default options look like :"
+msgstr ""
+
+#: docs_src/how-to_guides/install-prometheuspush-only-rhel.md:26
+msgid ""
+"Those are prometheus-push exporter CLI options. Run the executable to get "
+"the reference of the options :"
+msgstr ""
+
+#: docs_src/how-to_guides/install-prometheuspush-only-rhel.md:31
+msgid ""
+"A simple configuration to target Push Gateway reachable on https://myserver."
+"mydomain:PORT and send data every 30 seconds would look like :"
+msgstr ""
+
+#: docs_src/how-to_guides/install-prometheuspush-only-rhel.md:36
+msgid ""
+"Once the configuration is changed, you can restart the service and ensure it "
+"is enabled as well for next reboot :"
+msgstr ""
+
+#: docs_src/how-to_guides/install-prometheuspush-only-rhel.md:41
+msgid ""
+"Configuration issues or issues to reach the push gateway should be visible "
+"in the logs :"
+msgstr ""
+
+#: docs_src/how-to_guides/install-prometheuspush-only-rhel.md:46
+msgid "Automatic installation with ansible"
+msgstr ""
+
+#: docs_src/how-to_guides/install-prometheuspush-only-rhel.md:48
+msgid ""
+"There is a [sample Ansible playbook](https://github.com/hubblo-org/"
+"scaphandre/blob/dev/automation/ansible/install-configure-prometheuspush-rhel."
+"yml) available in the [automation/ansible](https://github.com/hubblo-org/"
+"scaphandre/tree/dev/automation/ansible) folder of the project."
+msgstr ""
+
+#: docs_src/how-to_guides/install-prometheuspush-only-rhel.md:50
+msgid "This can be used this way :"
+msgstr ""
+
+#: docs_src/how-to_guides/install-prometheuspush-only-rhel.md:55
+msgid "Beware of the playbook parameters :"
+msgstr ""
+
+#: docs_src/how-to_guides/install-prometheuspush-only-rhel.md:66
+msgid ""
+"Ensure to change those to match your context, including changing rhel "
+"version if needed (8 and 9 are supported) and parameters to reach the Push "
+"Gateway on the network."
+msgstr ""
+
+#: docs_src/explanations/host_metrics.md:1
+msgid "Explanations about host level power and energy metrics."
+msgstr ""
+
+#: docs_src/explanations/host_metrics.md:3
+msgid "This is true starting **from Scaphandre >= 1.0.**"
+msgstr ""
+
+#: docs_src/explanations/host_metrics.md:5
+msgid ""
+"There are several [metrics](../references/metrics.md) available at the host "
+"level in Scaphandre:"
+msgstr ""
+
+#: docs_src/explanations/host_metrics.md:6
+msgid ""
+"`scaph_host_power_microwatts` : always returned, computed from Record "
+"structs made from `scaph_host_energy_microjoules` metric"
+msgstr ""
+
+#: docs_src/explanations/host_metrics.md:7
+msgid ""
+"`scaph_host_energy_microjoules` : always returned, either one value or a sum "
+"of values coming directly from RAPL counters (`energy_uj` files or direct "
+"read from an MSR)"
+msgstr ""
+
+#: docs_src/explanations/host_metrics.md:8
+msgid ""
+"`scaph_host_rapl_psys_microjoules` : is available only when the PSYS [RAPL "
+"domain](explanations/rapl-domains.md) is available on the machine."
+msgstr ""
+
+#: docs_src/explanations/host_metrics.md:10
+msgid ""
+"In addition to those metrics, you might want to build, on your time series "
+"database, the sum of process\\_ metrics to have a view of the weight of all "
+"processes on the host power. Using Prometheus, it would look like: "
+"`sum(scaph_process_power_consumption_microwatts{hostname=\"$hostname\"}) / "
+"1000000`, to get it in Watts."
+msgstr ""
+
+#: docs_src/explanations/host_metrics.md:12
+msgid ""
+"Let's explain the relationship between those metrics, and what you could "
+"expect."
+msgstr ""
+
+#: docs_src/explanations/host_metrics.md:14
+msgid "`host_power` metric will return :"
+msgstr ""
+
+#: docs_src/explanations/host_metrics.md:15
+msgid ""
+"If PSYS domain is available, a computed power coming from PSYS energy records"
+msgstr ""
+
+#: docs_src/explanations/host_metrics.md:16
+msgid ""
+"If not, a computed power which is the sum of per-socket power (PKG RAPL "
+"domain) + DRAM RAPL domain power"
+msgstr ""
+
+#: docs_src/explanations/host_metrics.md:18
+msgid ""
+"Briefly explained (see [RAPL domains](explanations/rapl-domains.md) for "
+"detailled explanations), PSYS covers most components on the machine (\"all "
+"components connected to the SoC / motherboard\" according to most "
+"documentations), so we return this wider ranged metric when available. If "
+"not we use a combination of PKG domain, that includes CPU and integrated GPU "
+"power, and DRAM domain, that includes memory power. The first options gives "
+"higher figures than the second, for now."
+msgstr ""
+
+#: docs_src/explanations/host_metrics.md:20
+msgid ""
+"Suming the power of all processes, if the machine is mostly IDLE, you'll get "
+"a tiny percentage of the host machine, most likely. The difference between "
+"host power and the sum of processes power can be accounted as \"power due to "
+"IDLE activity\", in other words the power your machine demands for \"doing "
+"nothing\". The higher this difference on a long period of time (better seen "
+"as a graph), the higher chance that there is room for improvement in moving "
+"the workloads to another machine and shut the current machine down (and make "
+"it available for another project or to another organization to prevent from "
+"buying a new machine)."
+msgstr ""
+
+#: docs_src/explanations/host_metrics.md:22
+msgid ""
+"**Warning:** that being said, the way per-process power is computed is still "
+"biased and shall be improved in the following versions of Scaphandre. For "
+"now, the main key for allocation is CPU time. As host level power metrics "
+"include power usage of more and more components on the machine (work in "
+"progress) this allocation key will be more and more inaccurate. Future "
+"versions of this allocation model should include keys regarding the activity "
+"of other components than CPU. Enabling a better set of allocation keys for "
+"per-process power is part of the [roadmap](https://github.com/hubblo-org/"
+"scaphandre/projects/1)."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:3
+msgid ""
+"Scaphandre is a tool that makes it possible to see the power being used by a "
+"single process on a computer."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:5
+msgid ""
+"This sounds like a simple thing thing to be able to do, but in practice a "
+"number of details can make this more complex."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:7
+msgid ""
+"So having a good mental model of how it works will make it easier to "
+"understand when and how to use Scaphandre. Let's start with a simplified "
+"mental model below, before moving on to multiple processors or virtual "
+"machines - but once you understand the key ideas outlined below, it's easier "
+"to see how they can be applied to thinking about tracking power on virtual "
+"machines, or when multiple processors are available."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:9
+msgid "How a computer works on multiple jobs at the same time"
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:11
+msgid ""
+"When we first think about how much energy a single process running in a "
+"computer might use, we might start with a mental model that looks like the "
+"figure below, with large, uninterrupted chunks of compute time allocated to "
+"each process."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:13
+msgid ""
+"This is easy to understand, and it matches how we might be billed for a "
+"share of a larger machine when paying for cloud services."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:15
+msgid ""
+"![what scaphandre does - per process power usage](../img/what-scaphandre-"
+"does.png)"
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:17
+msgid "Timesharing of work"
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:19
+msgid ""
+"However, if the reality was _exactly_ like this diagram, our computers would "
+"only ever be able to do one thing at a time. It's more accurate and helpful "
+"to think of computers working on lots of different jobs at the same time - "
+"they work on one job for short interval of time, then another, and another "
+"and so one. You'll often see these small intervals of time referred to as "
+"_[jiffies](https://www.anshulpatel.in/posts/linux_cpu_percentage/)_."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:21
+msgid "![work on jobs is split into jiffies](../img/jiffies.png)"
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:23
+msgid ""
+"In a given amount of time, some jobs that are prioritized or more resource "
+"intensive will use more jiffies than others. Fortunately, each job keeps a "
+"running total of the total jiffies allocated to it, so if we know how many "
+"jiffies have been used in total, it can give us an idea how much of a "
+"machine's resources are being used by a given process."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:25
+msgid "![work on jobs is split into jiffies](../img/total-time-share.png)"
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:26
+msgid "Going from share of resources to actual power figures"
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:28
+msgid ""
+"It's possible without Scaphandre to understand how large a share of a "
+"machines' resources are being used by a given process."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:30
+msgid ""
+"This is useful, by itself, but if we want to understand how much _power_ is "
+"used per process, not just the share of the machine's resources, we need to "
+"know how much power is being used by the machine in absolute terms."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:32
+msgid ""
+"To do this, we need a sensor of some kind to track power usage by the "
+"machine itself. Some servers have these, like with Intel's RAPL sensors, "
+"which we cover this in more detail later on. This makes it possible to "
+"understand how much power is being used by CPUs, GPUs and so on, in terms of "
+"watts, or, if we are looking at just a single process, various fractions of "
+"a watt."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:34
+msgid "![Sensors provide power over time](../img/power-over-time.png)"
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:36
+msgid ""
+"To understand the power used by a single process we combine both of these "
+"ideas. We count the jiffies used by _our_ job when it's being worked on, and "
+"for each jiffy, we check how much power is being drawn at those moments in "
+"time."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:38
+msgid ""
+"![Combined we can see how much the power during 'our' jiffies](../img/power-"
+"and-share-of-usage.png)"
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:40
+msgid ""
+"Finally, when we group together all the power readings for all our jiffies "
+"over a given time period, we can arrive at a usable figure for how much "
+"power has been used, in terms of watt hours."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:42
+msgid ""
+"Once we have a figure in terms of watt hours, there are various ways we can "
+"convert this to environmental impact. A common way is to use an _emission "
+"factor_ for the electricity used, to turn the power consumption data into an "
+"estimate of associated carbon emissions."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:44
+msgid ""
+"![Combined we can see how much the power during 'our' jiffies](../img/power-"
+"by-process.png)"
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:46
+msgid "Working with virtualisation and multiple processors"
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:48
+msgid ""
+"While the reality is again more complicated than the diagram below, the same "
+"ideas broadly apply when you introduce multiple processors too."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:50
+msgid ""
+"If you are able to read from sensors that can share how much power is being "
+"used by the various processors at work, and know how much of the time is "
+"being allocated to our processes during those moments, you can get a good "
+"idea of what these figures are, at a per-process level."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:52
+msgid "![Seeing this with multiple processors](../img/multiple-processors.png)"
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:54
+msgid ""
+"Things get a bit more complicated with virtualised environments, because in "
+"many cases, virtual machines only have a partial view of the system they are "
+"part of, and frequently do not have access to any power usage figures from "
+"the host physical machine."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:56
+msgid ""
+"However, if a guest virtual machine or guest container _does_ have access to "
+"readings provided by the host physical machine, it is possible to work out "
+"the same kinds of per-process power figures. Scaphandre supports exposing "
+"these kinds of power readings to virtual machines and containers, which "
+"means, if you are running on infrastructure that is running scaphandre and "
+"exposing these readings, you can see these figures for the energy used by "
+"your own processes."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:61
+msgid "More details about how Scaphandre works"
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:63
+msgid ""
+"As you can see with the [prometheus exporter reference](../references/"
+"exporter-prometheus.md), scaphandre exporters can provide process level "
+"power consumption metrics. This section will explain how it is done and how "
+"it may be improved in the future."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:65
+msgid "Some details about RAPL"
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:67
+msgid ""
+"We'll talk here about the case where scaphandre is able to effectively "
+"measure the power consumption of the host (see [compatibility](../"
+"compatibility.md) section for more on sensors and their prerequisites) and "
+"specifically about the [PowercapRAPL](../references/sensor-powercap_rapl.md) "
+"sensor."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:69
+msgid ""
+"Let's clarify what's happening when you collect metrics with scaphandre and "
+"the RAPL sensor. RAPL stands for [Running Average Power Limit](https://01."
+"org/blogs/2014/running-average-power-limit-%E2%80%93-rapl). It's a "
+"technology embedded in most Intel and AMD x86 CPUs produced after 2012."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:72
+msgid ""
+"Thanks to this technology it is possible to get the total energy consumption "
+"of the CPU, of the consumption per CPU socket, plus in some cases, the "
+"consumption of the DRAM controller. In most cases it represents the vast "
+"majority of the energy consumption of the machine (except when running GPU "
+"intensive workloads, for example)."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:74
+msgid ""
+"Further improvements shall be made in scaphandre to fully measure the "
+"consumption when GPU are involved (or a lot of hard drives on the same "
+"host...)."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:76
+msgid ""
+"Between scaphandre and this data is the powercap kernel module that writes "
+"the energy consumption to files. Scaphandre reads those files, stores the "
+"data in buffers and then allows for more processing through the exporters."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:78
+msgid "How to get the consumption of one process ?"
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:80
+msgid ""
+"The PowercapRAPL sensor does actually more than just collecting those energy "
+"consumption metrics (and converting them to power consumption metrics)."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:82
+msgid ""
+"Every time the exporter asks for a measurement (either periodically like in "
+"the [Stdout](../references/exporter-stdout.md) exporter, or every time a "
+"request comes as would be the case for the Prometheus exporter) the sensor "
+"reads the values of the energy counters from powercap. It then stores those "
+"values, and does the same for the CPU usage statistics of the CPU (the one "
+"you can see in `/proc/stats`) and for each running process on the machine at "
+"that time (see `/proc/PID/stats`)."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:84
+msgid ""
+"With this data it is possible to compute the ratio of CPU time actively "
+"spent for a given PID on the CPU time actively spent doing something. With "
+"this ratio we can then get the subset of power consumption that is related "
+"to that PID on a given timeframe (between two measurement requests)."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:86
+msgid "How to get the consumption of an application/a service ?"
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:88
+msgid ""
+"Services and programs are often not running on only one PID. It's needed to "
+"aggregate the consumption of all related PIDs to know what this service is "
+"actually consuming."
+msgstr ""
+
+#: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:90
+msgid ""
+"To do that, in the current state of scaphandre development, you can use the "
+"Prometheus exporter, and then use Prometheus and its query language "
+"capabilities. You'll find examples looking at the graphs and queries [here]"
+"(https://metrics.hubblo.org). In a near future, more advanced features may "
+"be implemented in scaphandre to allow such classification even if you don't "
+"have access to a proper [Time Series database (TSDB)](https://en.wikipedia."
+"org/wiki/Time_series_database)."
+msgstr ""
+
+#: docs_src/explanations/internal-structure.md:3
+msgid ""
+"Scaphandre is designed to be extensible. As it performs basically two tasks: "
+"**collecting**/pre-computing the power consumption metrics and "
+"**publishing** it, it is composed of two main components: a **sensor** and "
+"an **exporter**. Each can be implemented in different ways to match a "
+"certain use case. When you run scaphandre from the command line, `-s` allows "
+"you to choose the sensor you want to use, and the next subcommand is the "
+"name of the exporter."
+msgstr ""
+
+#: docs_src/explanations/internal-structure.md:7
+msgid "Sensors are meant to:"
+msgstr ""
+
+#: docs_src/explanations/internal-structure.md:9
+msgid "get the power consumptions metrics of the host"
+msgstr ""
+
+#: docs_src/explanations/internal-structure.md:10
+msgid "make it available for the exporter"
+msgstr ""
+
+#: docs_src/explanations/internal-structure.md:12
+msgid ""
+"The [PowercapRAPL](../references/sensor-powercap_rapl.md) for instance, gets "
+"and transforms metrics coming from the powercap Linux kernel module, that "
+"serves as an interface to get the data from the [RAPL](https://01.org/"
+"blogs/2014/running-average-power-limit-%E2%80%93-rapl) feature of x86 CPUs. "
+"Because this feature is only accessible when you are running on a bare metal "
+"machine, this sensor will not work in a virtual machine, except if you first "
+"run scaphandre on the hypervisor and make the VM metrics available, with the "
+"[qemu exporter](../references/exporter-qemu.md), to scaphandre running "
+"inside the virtual machine."
+msgstr ""
+
+#: docs_src/explanations/internal-structure.md:14
+msgid ""
+"When you don't have access to the hypervisor/bare-metal machine (ie. when "
+"you run on public cloud instances and your provider doesn't run scaphandre) "
+"you still have the option to estimate the power consumption, based on both "
+"the ressources (cpu/gpu/ram/io...) consumed by the virtual machine at a "
+"given time, and the characteristics of the underlying hardware. This is the "
+"way we are designing the future [estimation-based sensor](https://github.com/"
+"hubblo-org/scaphandre/issues/25), to match that use case."
+msgstr ""
+
+#: docs_src/explanations/internal-structure.md:16
+msgid ""
+"Looking at the code, you'll find that the interface between metrics and the "
+"exporters is in fact the [Topology](https://docs.rs/scaphandre/0.1.1/"
+"scaphandre/sensors/struct.Topology.html) object. This is intended to be "
+"asked by the exporter through the [get_topology](https://docs.rs/"
+"scaphandre/0.1.1/scaphandre/sensors/trait.Sensor.html#tymethod.get_topology) "
+"method of the sensor."
+msgstr ""
+
+#: docs_src/explanations/internal-structure.md:20
+msgid "An exporter is expected to:"
+msgstr ""
+
+#: docs_src/explanations/internal-structure.md:22
+msgid ""
+"ask the sensors to get new metrics and store them for later, potential usage"
+msgstr ""
+
+#: docs_src/explanations/internal-structure.md:23
+msgid "export the current metrics "
+msgstr ""
+
+#: docs_src/explanations/internal-structure.md:25
+msgid ""
+"The [Stdout](../references/exporter-stdout.md) exporter exposes the metrics "
+"on the standard output (in your terminal). The [prometheus](../references/"
+"exporter-prometheus.md) exporter exposes the metrics on an HTTP endpoint, to "
+"be scraped by a [prometheus](https://prometheus.io) instance. An exporter "
+"should be created for each monitoring scenario (do you want to feed your "
+"favorite monitoring/data analysis tool with scaphandre metrics ? feel free "
+"to open a [PR](https://github.com/hubblo-org/scaphandre/pulls) to create a "
+"new exporter !)."
+msgstr ""
+
+#: docs_src/explanations/internal-structure.md:27
+msgid ""
+"As introduced in the [sensors](#sensors) section, the [Qemu](../references/"
+"exporter-qemu.md) exporter, is very specific. It is only intended to collect "
+"metrics related to running virtual machines on a Qemu/KVM hypervisor. Those "
+"metrics can then be made available to each virtual machine and their own "
+"scaphandre instance, running the [PowercapRAPL](../references/sensor-"
+"powercap_rapl.md) sensor (with the `--vm` flag on). The qemu exporter puts "
+"VM's metrics in files the same way the powercap kernel module does it. It "
+"mimics this behavior, so the sensor can act the same way it would on a bare "
+"metal machine."
+msgstr ""
+
+#: docs_src/explanations/about-containers.md:3
+msgid "There are several ways scaphandre can interact with containers."
+msgstr ""
+
+#: docs_src/explanations/about-containers.md:5
+msgid ""
+"You may run scaphandre **in a container**, to not have to manage the "
+"dependencies, then measure the power consumption of the **bare metal host**. "
+"This is described in the [quickstart tutorial](../tutorials/getting_started."
+"md). Note that you need to expose `/sys/class/powercap` and `/proc` as "
+"volumes in the container to allow scaphandre to get the relevant metrics "
+"from the bare metal host."
+msgstr ""
+
+#: docs_src/explanations/about-containers.md:7
+msgid ""
+"Scaphandre may help you measure the **power consumption of containers** "
+"running on a given host. You can already get to that goal using the tips "
+"provided in the howto section called [\"Get process level power "
+"consumption\"](../how-to_guides/get-process-level-power-in-grafana.md). It "
+"may still require some tweaking and inventiveness from you in making the "
+"approriate queries to your favorite TSDB. This should be made easier by the "
+"upcoming [scaphandre features](https://github.com/hubblo-org/scaphandre/"
+"projects/1)."
+msgstr ""
+
+#: docs_src/explanations/about-containers.md:9
+msgid ""
+"Another use case scenario is measuring the power consumption of a "
+"**container orchestrator** (like [kubernetes](https://kubernetes.io/)), its "
+"nodes and the containers and applications running on it. Scaphandre can be "
+"installed on Kubernetes via the Helm chart and there is a [tutorial](../"
+"tutorials/kubernetes.md) for installing it along with Prometheus and Grafana "
+"to view the metrics."
+msgstr ""
+
+#: docs_src/explanations/about-containers.md:11
+msgid ""
+"As described [here](../compatibility.md), scaphandre provides several ways "
+"([sensors](../explanations/internal-structure.md#sensors)) to collect the "
+"power consumption metrics. Depending on your use case a sensor should be "
+"more suitable than the other. Each of them comes with strengths and "
+"weaknesses. This is basically always a tradeoff between precision and "
+"simplicity. This is especially true if you run a container-based workloads "
+"on public cloud instances. We are working to provide a solution [for that as "
+"well](https://github.com/hubblo-org/scaphandre/issues/25)."
+msgstr ""
+
+#: docs_src/explanations/rapl-domains.md:1
+msgid ""
+"Explanation on RAPL / Running Average Power Limit domains: what we (think "
+"we) know so far"
+msgstr ""
+
+#: docs_src/explanations/rapl-domains.md:3
+msgid ""
+"RAPL stands for \"Running Average Power Limit\", it is a feature on Intel/"
+"AMD x86 CPU's (manufactured after 2012) that allows to set limits on power "
+"used by the CPU and other components. This feature also allows to just get "
+"\"measurements\" (mind the double quotes, as at least part of the numbers "
+"RAPL gives are coming from estimations/modeling) of components power usage."
+msgstr ""
+
+#: docs_src/explanations/rapl-domains.md:5
+msgid "![RAPL domains](rapl.png)"
+msgstr ""
+
+#: docs_src/explanations/rapl-domains.md:7
+msgid "It is composed of \"domains\", that, in 2023, may include:"
+msgstr ""
+
+#: docs_src/explanations/rapl-domains.md:8
+msgid "**Core/PP0**: Energy consumed by the CPU Cores themselves."
+msgstr ""
+
+#: docs_src/explanations/rapl-domains.md:9
+msgid ""
+"**Uncore/PP1**: Energy consumed by components close to the CPU : most of the "
+"time it means the embedded GPU chipset. "
+msgstr ""
+
+#: docs_src/explanations/rapl-domains.md:10
+msgid "**Dram**: Energy consumed by the memory/RAM sticks"
+msgstr ""
+
+#: docs_src/explanations/rapl-domains.md:11
+msgid ""
+"**Package/PKG**: Includes \"Core\" and \"Uncore\". In some documentations "
+"and in some of our experiments it seem to include \"Dram\", but this doesn't "
+"seem true in every cases."
+msgstr ""
+
+#: docs_src/explanations/rapl-domains.md:12
+msgid ""
+"**PSys**: We don't have a clear understanding on this one (yet). But most "
+"documentations refer to it with words similar to \"PSys: (introduced with "
+"Intel Skylake) monitors and controls the thermal and power specifications of "
+"the entire SoC and it is useful especially when the source of the power "
+"consumption is neither the CPU nor the GPU. For multi-socket server systems, "
+"each socket reports its own RAPL values.\". To summarize, Psys seems like an "
+"interesting metric to get energy consumed by a motherboard and connected "
+"components (which includes RAPL usual suspects but also WiFi/Bluetooth cards "
+"and probably more). If you want to know more about this metric, we gathered "
+"references/sources [here](https://github.com/bpetit/awesome-energy/tree/"
+"master#rapl-psys-domain). If you want to help us understanding and "
+"documenting better this metric, please consider constributing to the "
+"[Energizta project](https://github.com/Boavizta/Energizta/)."
+msgstr ""
+
+#: docs_src/explanations/rapl-domains.md:14
+msgid ""
+"RAPL documentation from Intel doesn't necessarily give very precise "
+"informations about how RAPL behaves depending on the platform, or about what "
+"is included in the calculation. Actively looking for other experimentations/"
+"feedbacks/documentations is needed. You might find some informations "
+"gathered here: [awesome-energy](https://github.com/bpetit/awesome-"
+"energy#rapl). If you have more or more precise informations and are willing "
+"to contribute, don't hesitate to open a PR to dev branch on [scaphandre's "
+"repository](https://github.com/hubblo-org/scaphandre/tree/dev) (targeting "
+"[docs_src folder](https://github.com/hubblo-org/scaphandre/tree/dev/"
+"docs_src)) and/or the [awesome-energy](https://github.com/bpetit/awesome-"
+"energy) repository."
+msgstr ""
+
+#: docs_src/explanations/rapl-domains.md:16
+msgid ""
+"If you want to know if RAPL is supported by your CPU, please have a look to "
+"the end of the [Compatibility](../compatibility.md/) section."
+msgstr ""
+
+#: docs_src/references/metrics.md:1
+msgid "Metrics exposed by Scaphandre"
+msgstr ""
+
+#: docs_src/references/metrics.md:3
+msgid ""
+"With [Stdout](exporter-stdout.md) exporter, you can see all metrics "
+"available on your machine with flag `--raw-metrics`. With [prometheus]"
+"(exporter-prometheus.md) exporter, all metrics have a HELP section provided "
+"on /metrics (or whatever suffix you choosed to expose them)."
+msgstr ""
+
+#: docs_src/references/metrics.md:6
+msgid "Here are some key metrics that you will most probably be interested in:"
+msgstr ""
+
+#: docs_src/references/metrics.md:8
+msgid ""
+"`scaph_host_power_microwatts`: Aggregation of several measurements to give a "
+"try on the power usage of the the whole host, in microwatts (GAUGE). It "
+"might be the same as RAPL PSYS (see [RAPL domains](../explanations/rapl-"
+"domains.md)) measurement if available, or a combination of RAPL PKG and DRAM "
+"domains + an estimation of other hardware componentes power usage."
+msgstr ""
+
+#: docs_src/references/metrics.md:9
+msgid ""
+"`scaph_process_power_consumption_microwatts{exe=\"$PROCESS_EXE\","
+"pid=\"$PROCESS_PID\",cmdline=\"path/to/exe --and-maybe-options\"}`: Power "
+"consumption due to the process, measured on at the topology level, in "
+"microwatts. PROCESS_EXE being the name of the executable and PROCESS_PID "
+"being the pid of the process. (GAUGE)"
+msgstr ""
+
+#: docs_src/references/metrics.md:11
+msgid ""
+"For more details on that metric labels, see [this section](#getting-per-"
+"process-data-with-scaph_process_-metrics)."
+msgstr ""
+
+#: docs_src/references/metrics.md:13
+msgid ""
+"And some more deep metrics that you may want if you need to make more "
+"complex calculations and data processing:"
+msgstr ""
+
+#: docs_src/references/metrics.md:15
+msgid ""
+"`scaph_host_energy_microjoules` : Energy measurement for the whole host, as "
+"extracted from the sensor, in microjoules. (COUNTER)"
+msgstr ""
+
+#: docs_src/references/metrics.md:16
+msgid ""
+"`scaph_socket_power_microwatts{socket_id=\"$SOCKET_ID\"}`: Power measurement "
+"relative to a CPU socket, in microwatts. SOCKET_ID being the socket "
+"numerical id (GAUGE)"
+msgstr ""
+
+#: docs_src/references/metrics.md:18
+msgid ""
+"If your machine provides RAPL PSYS domain (see [RAPL domains](../"
+"explanations/rapl-domains.md)), you can get the raw energy counter for PSYS/"
+"platform with `scaph_host_rapl_psys_microjoules`. Note that "
+"`scaph_host_power_microwatts` is based on this PSYS counter if it is "
+"available."
+msgstr ""
+
+#: docs_src/references/metrics.md:20
+msgid "Since 1.0.0 the following host metrics are availalable as well ;"
+msgstr ""
+
+#: docs_src/references/metrics.md:22
+msgid "`scaph_host_swap_total_bytes`: Total swap space on the host, in bytes."
+msgstr ""
+
+#: docs_src/references/metrics.md:23
+msgid ""
+"`scaph_host_swap_free_bytes`: Swap space free to be used on the host, in "
+"bytes."
+msgstr ""
+
+#: docs_src/references/metrics.md:24
+msgid ""
+"`scaph_host_memory_free_bytes`: Random Access Memory free to be used (not "
+"reused) on the host, in bytes."
+msgstr ""
+
+#: docs_src/references/metrics.md:25
+msgid ""
+"`scaph_host_memory_available_bytes`: Random Access Memory available to be re-"
+"used on the host, in bytes."
+msgstr ""
+
+#: docs_src/references/metrics.md:26
+msgid ""
+"`scaph_host_memory_total_bytes`: Random Access Memory installed on the host, "
+"in bytes."
+msgstr ""
+
+#: docs_src/references/metrics.md:27
+msgid "`scaph_host_disk_total_bytes`: Total disk size, in bytes."
+msgstr ""
+
+#: docs_src/references/metrics.md:28
+msgid "`scaph_host_disk_available_bytes`: Available disk space, in bytes."
+msgstr ""
+
+#: docs_src/references/metrics.md:30
+msgid ""
+"Disk metrics have the following labels : disk_file_system, "
+"disk_is_removable, disk_type, disk_mount_point, disk_name"
+msgstr ""
+
+#: docs_src/references/metrics.md:32
+msgid ""
+"`scaph_host_cpu_frequency`: Global frequency of all the cpus. In MegaHertz"
+msgstr ""
+
+#: docs_src/references/metrics.md:33
+msgid "`scaph_host_load_avg_fifteen`: Load average on 15 minutes."
+msgstr ""
+
+#: docs_src/references/metrics.md:34
+msgid "`scaph_host_load_avg_five`: Load average on 5 minutes."
+msgstr ""
+
+#: docs_src/references/metrics.md:35
+msgid "`scaph_host_load_avg_one`: Load average on 1 minute."
+msgstr ""
+
+#: docs_src/references/metrics.md:37
+msgid ""
+"If you hack scaph or just want to investigate its behavior, you may be "
+"interested in some internal metrics:"
+msgstr ""
+
+#: docs_src/references/metrics.md:39
+msgid "`scaph_self_memory_bytes`: Scaphandre memory usage, in bytes"
+msgstr ""
+
+#: docs_src/references/metrics.md:41
+msgid ""
+"`scaph_self_memory_virtual_bytes`: Scaphandre virtual memory usage, in bytes"
+msgstr ""
+
+#: docs_src/references/metrics.md:43
+msgid ""
+"`scaph_self_topo_stats_nb`: Number of CPUStat traces stored for the host"
+msgstr ""
+
+#: docs_src/references/metrics.md:45
+msgid ""
+"`scaph_self_topo_records_nb`: Number of energy consumption Records stored "
+"for the host"
+msgstr ""
+
+#: docs_src/references/metrics.md:47
+msgid "`scaph_self_topo_procs_nb`: Number of processes monitored by scaph"
+msgstr ""
+
+#: docs_src/references/metrics.md:49
+msgid ""
+"`scaph_self_socket_stats_nb{socket_id=\"SOCKET_ID\"}`: Number of CPUStat "
+"traces stored for each socket"
+msgstr ""
+
+#: docs_src/references/metrics.md:51
+msgid ""
+"`scaph_self_socket_records_nb{socket_id=\"SOCKET_ID\"}`: Number of energy "
+"consumption Records stored for each socket, with SOCKET_ID being the id of "
+"the socket measured"
+msgstr ""
+
+#: docs_src/references/metrics.md:53
+msgid ""
+"`scaph_self_domain_records_nb{socket_id=\"SOCKET_ID\","
+"rapl_domain_name=\"RAPL_DOMAIN_NAME \"}`: Number of energy consumption "
+"Records stored for a Domain, where SOCKET_ID identifies the socket and "
+"RAPL_DOMAIN_NAME identifies the rapl domain measured on that socket"
+msgstr ""
+
+#: docs_src/references/metrics.md:56
+msgid "Getting per process data with scaph_process\\_\\* metrics"
+msgstr ""
+
+#: docs_src/references/metrics.md:58
+msgid ""
+"Here are available labels for the "
+"`scaph_process_power_consumption_microwatts` metric that you may need to "
+"extract the data you need:"
+msgstr ""
+
+#: docs_src/references/metrics.md:60
+msgid ""
+"`exe`: is the name of the executable that is the origin of that process. "
+"This is good to be used when your application is running one or only a few "
+"processes."
+msgstr ""
+
+#: docs_src/references/metrics.md:61
+msgid ""
+"`cmdline`: this contains the whole command line with the executable path and "
+"its parameters (concatenated). You can filter on this label by using "
+"prometheus `=~` operator to match a regular expression pattern. This is very "
+"practical in many situations."
+msgstr ""
+
+#: docs_src/references/metrics.md:62
+msgid ""
+"`instance`: this is a prometheus generated label to enable you to filter the "
+"metrics by the originating host. This is very useful when you monitor "
+"distributed services, so that you can not only sum the metrics for the same "
+"service on the different hosts but also see what instance of that service is "
+"consuming the most, or notice differences beteween hosts that may not have "
+"the same hardware, and so on..."
+msgstr ""
+
+#: docs_src/references/metrics.md:63
+msgid ""
+"`pid`: is the process id, which is useful if you want to track a specific "
+"process and have your eyes on what's happening on the host, but not so "
+"practical to use in a more general use case"
+msgstr ""
+
+#: docs_src/references/metrics.md:65
+msgid "Since 1.0.0 the following per-process metrics are available as well :"
+msgstr ""
+
+#: docs_src/references/metrics.md:67
+msgid ""
+"`scaph_process_cpu_usage_percentage`: CPU time consumed by the process, as a "
+"percentage of the capacity of all the CPU Cores"
+msgstr ""
+
+#: docs_src/references/metrics.md:68
+msgid ""
+"`scaph_process_memory_bytes`: Physical RAM usage by the process, in bytes"
+msgstr ""
+
+#: docs_src/references/metrics.md:69
+msgid ""
+"`scaph_process_memory_virtual_bytes`: Virtual RAM usage by the process, in "
+"bytes"
+msgstr ""
+
+#: docs_src/references/metrics.md:70
+msgid ""
+"`scaph_process_disk_total_write_bytes`: Total data written on disk by the "
+"process, in bytes"
+msgstr ""
+
+#: docs_src/references/metrics.md:71
+msgid ""
+"`scaph_process_disk_write_bytes`: Data written on disk by the process, in "
+"bytes"
+msgstr ""
+
+#: docs_src/references/metrics.md:72
+msgid ""
+"`scaph_process_disk_read_bytes`: Data read on disk by the process, in bytes"
+msgstr ""
+
+#: docs_src/references/metrics.md:73
+msgid ""
+"`scaph_process_disk_total_read_bytes`: Total data read on disk by the "
+"process, in bytes"
+msgstr ""
+
+#: docs_src/references/metrics.md:75
+msgid "Get container-specific labels on scaph_process\\_\\* metrics"
+msgstr ""
+
+#: docs_src/references/metrics.md:77
+msgid ""
+"The flag --containers enables Scaphandre to collect data about the running "
+"Docker containers or Kubernetes pods on the local machine. This way, it adds "
+"specific labels to make filtering processes power consumption metrics by "
+"their encapsulation in containers easier."
+msgstr ""
+
+#: docs_src/references/metrics.md:79
+msgid ""
+"Generic labels help to identify the container runtime and scheduler used "
+"(based on the content of `/proc/PID/cgroup`):"
+msgstr ""
+
+#: docs_src/references/metrics.md:81
+msgid ""
+"`container_scheduler`: possible values are `docker` or `kubernetes`. If this "
+"label is not attached to the metric, it means that scaphandre didn't manage "
+"to identify the container scheduler based on cgroups data."
+msgstr ""
+
+#: docs_src/references/metrics.md:83
+msgid ""
+"Then the label `container_runtime` could be attached. The only possible "
+"value for now is `containerd`."
+msgstr ""
+
+#: docs_src/references/metrics.md:85
+msgid ""
+"`container_id` is the ID scaphandre got from /proc/PID/cgroup for that "
+"container."
+msgstr ""
+
+#: docs_src/references/metrics.md:87
+msgid ""
+"For Docker containers (if `container_scheduler` is set), available labels "
+"are :"
+msgstr ""
+
+#: docs_src/references/metrics.md:89
+msgid ""
+"`container_names`: is a string containing names attached to that container, "
+"according to the docker daemon"
+msgstr ""
+
+#: docs_src/references/metrics.md:90
+msgid "`container_docker_version`: version of the docker daemon"
+msgstr ""
+
+#: docs_src/references/metrics.md:91
+msgid ""
+"`container_label_maintainer`: content of the maintainer field for this "
+"container"
+msgstr ""
+
+#: docs_src/references/metrics.md:93
+msgid ""
+"For containers coming from a docker-compose file, there are a bunch of "
+"labels related to data coming from the docker daemon:"
+msgstr ""
+
+#: docs_src/references/metrics.md:95
+msgid "`container_label_com_docker_compose_project_working_dir`"
+msgstr ""
+
+#: docs_src/references/metrics.md:96
+msgid "`container_label_com_docker_compose_container_number`"
+msgstr ""
+
+#: docs_src/references/metrics.md:97
+msgid "`container_label_com_docker_compose_project_config_files`"
+msgstr ""
+
+#: docs_src/references/metrics.md:98
+msgid "`container_label_com_docker_compose_version`"
+msgstr ""
+
+#: docs_src/references/metrics.md:99
+msgid "`container_label_com_docker_compose_service`"
+msgstr ""
+
+#: docs_src/references/metrics.md:100
+msgid "`container_label_com_docker_compose_oneoff`"
+msgstr ""
+
+#: docs_src/references/metrics.md:102
+msgid ""
+"For Kubernetes pods (if `container_scheduler` is set), available labels are :"
+msgstr ""
+
+#: docs_src/references/metrics.md:104
+msgid ""
+"`kubernetes_node_name`: identifies the name of the kubernetes node "
+"scaphandre is running on"
+msgstr ""
+
+#: docs_src/references/metrics.md:105
+msgid "`kubernetes_pod_name`: the name of the pod the container belongs to"
+msgstr ""
+
+#: docs_src/references/metrics.md:106
+msgid ""
+"`kubernetes_pod_namespace`: the namespace of the pod the container belongs to"
+msgstr ""
+
+#: docs_src/references/exporter-json.md:3
+#: docs_src/references/exporter-prometheus.md:5
+#: docs_src/references/exporter-prometheuspush.md:3
+#: docs_src/references/exporter-qemu.md:8
+#: docs_src/references/exporter-riemann.md:5
+#: docs_src/references/exporter-stdout.md:3
+#: docs_src/references/exporter-warp10.md:5
+#: docs_src/references/sensor-msr_rapl.md:12
+#: docs_src/references/sensor-powercap_rapl.md:23
+msgid "Usage"
+msgstr ""
+
+#: docs_src/references/exporter-json.md:5
+msgid ""
+"You can launch the JSON exporter this way (running the default powercap_rapl "
+"sensor):"
+msgstr ""
+
+#: docs_src/references/exporter-json.md:10
+msgid ""
+"Default behavior is to measure and show metrics periodically during 10 "
+"seconds. You can change that timeout with `-t`. Here is how to display "
+"metrics during one minute:"
+msgstr ""
+
+#: docs_src/references/exporter-json.md:15
+msgid ""
+"You can change as well the step measure duration with -s. Here is how to "
+"display metrics during one minutes with a 5s step:"
+msgstr ""
+
+#: docs_src/references/exporter-json.md:20
+msgid ""
+"If you want a faster interval you can use option -n (for nano seconds). Here "
+"is how to display metrics during 10s with a 100ms step:"
+msgstr ""
+
+#: docs_src/references/exporter-json.md:25
+msgid ""
+"By default, JSON is printed in the terminal, to write result in a file you "
+"can provide a path with option -f:"
+msgstr ""
+
+#: docs_src/references/exporter-json.md:30
+msgid ""
+"To get informations about processes that are running in containers, add `--"
+"containers`:"
+msgstr ""
+
+#: docs_src/references/exporter-json.md:35
+msgid ""
+"Since 1.0.0 you can filter the processes, either by their process name with "
+"`--process-regex`, or by the name of the container they run in with `--"
+"container-regex` (needs the flag `--containers` to be active as well)."
+msgstr ""
+
+#: docs_src/references/exporter-json.md:37
+#: docs_src/references/exporter-prometheus.md:12
+#: docs_src/references/exporter-prometheuspush.md:10
+#: docs_src/references/exporter-riemann.md:12
+#: docs_src/references/exporter-stdout.md:42
+#: docs_src/references/exporter-warp10.md:15
+msgid "As always exporter's options can be displayed with `-h`:"
+msgstr ""
+
+#: docs_src/references/exporter-json.md:66
+#: docs_src/references/exporter-prometheus.md:40
+#: docs_src/references/exporter-riemann.md:94
+msgid ""
+"Metrics provided Scaphandre are documented [here](references/metrics.md)."
+msgstr ""
+
+#: docs_src/references/exporter-prometheus.md:7
+msgid ""
+"You can launch the prometheus exporter this way (running the default "
+"powercap_rapl sensor):"
+msgstr ""
+
+#: docs_src/references/exporter-prometheus.md:35
+msgid ""
+"With default options values, the metrics are exposed on http://"
+"localhost:8080/metrics."
+msgstr ""
+
+#: docs_src/references/exporter-prometheus.md:37
+#: docs_src/references/exporter-warp10.md:34
+msgid ""
+"Use -q or --qemu option if you are running scaphandre on a hypervisor. In "
+"that case a label with the vm name will be added to all `qemu-system*` "
+"processes. This will allow to easily create charts consumption for each vm "
+"and defined which one is the top contributor."
+msgstr ""
+
+#: docs_src/references/exporter-prometheuspush.md:1
+msgid "PrometheusPush Exporter for Prometheus Push Gateway"
+msgstr ""
+
+#: docs_src/references/exporter-prometheuspush.md:5
+msgid "You can launch the prometheus exporter this way:"
+msgstr ""
+
+#: docs_src/references/exporter-prometheuspush.md:30
+msgid ""
+"With default options values, the metrics are sent to http://localhost:9091/"
+"metrics"
+msgstr ""
+
+#: docs_src/references/exporter-prometheuspush.md:32
+#: docs_src/references/exporter-riemann.md:92
+msgid "Metrics exposed"
+msgstr ""
+
+#: docs_src/references/exporter-prometheuspush.md:34
+msgid "Metrics exposed are the same as the Prometheus (pull mode) exporter."
+msgstr ""
+
+#: docs_src/references/exporter-prometheuspush.md:36
+msgid ""
+"Push gateway's grouping key for each host is in the form `job/scaphandre/"
+"instance/${HOSTNAME}` with HOSTNAME being the hostname of the host sending "
+"metrics."
+msgstr ""
+
+#: docs_src/references/exporter-qemu.md:3
+msgid ""
+"Computes energy consumption metrics for each Qemu/KVM virtual machine found "
+"on the host. Exposes those metrics as filetrees compatible with the "
+"[powercap_rapl sensor](sensor-powercap_rapl.md)."
+msgstr ""
+
+#: docs_src/references/exporter-qemu.md:6
+msgid ""
+"Note that this is still experimental. Metrics are already considered "
+"trustworthy, but there are discussions and tests to be performed about the "
+"acceptable ways to share the data with the guests/vms. Any feedback or "
+"thoughts about this are welcome. Please refer to the [contributing section]"
+"(../contributing.md)."
+msgstr ""
+
+#: docs_src/references/exporter-qemu.md:10
+msgid ""
+"Run the scaphandre with the qemu exporter on your bare metal hypervisor "
+"machine:"
+msgstr ""
+
+#: docs_src/references/exporter-qemu.md:15
+msgid ""
+"Default is to expose virtual machines metrics in `/var/lib/libvirt/"
+"scaphandre/${DOMAIN_NAME}` with `DOMAIN_NAME` being the libvirt domain name "
+"of the virtual machine. First create a tmpfs mount point to isolate metrics "
+"for that virtual machine:"
+msgstr ""
+
+#: docs_src/references/exporter-qemu.md:21
+msgid ""
+"Ensure you expose the content of this folder to the virtual machine by "
+"having this configuration in the xml configuration of the domain:"
+msgstr ""
+
+#: docs_src/references/exporter-qemu.md:31
+msgid ""
+"You can edit the vm properties using `sudo virsh edit <DOMAIN_NAME>` using "
+"your usual editor. But it is more convenient to use virtual-manager, as "
+"explained in the following screenshots."
+msgstr ""
+
+#: docs_src/references/exporter-qemu.md:33
+msgid ""
+"_It also helps to define the correct syntax which probably depends from the "
+"qemu version. You can check that the above configuration is slightly "
+"different form the one below_."
+msgstr ""
+
+#: docs_src/references/exporter-qemu.md:35
+msgid ""
+"a. Right click in the hardware menu: ![virtualmgr00](images/virtualmgr00.png)"
+msgstr ""
+
+#: docs_src/references/exporter-qemu.md:38
+msgid ""
+"b. Enter the following parameters: ![virtualmgr01](images/virtualmgr01.png)"
+msgstr ""
+
+#: docs_src/references/exporter-qemu.md:41
+msgid "c. XML generated as a result: ![virtualmgr02](images/virtualmgr02.png)"
+msgstr ""
+
+#: docs_src/references/exporter-qemu.md:44
+msgid ""
+"Ensure the VM has been started once the configuration is applied, then mount "
+"the filesystem on the VM/guest:"
+msgstr ""
+
+#: docs_src/references/exporter-qemu.md:49
+msgid "Still in the guest, run scaphandre in VM mode with the default sensor:"
+msgstr ""
+
+#: docs_src/references/exporter-qemu.md:54
+msgid ""
+"Collect your virtual machine specific power usage metrics. (requesting "
+"http://VM_IP:8080/metrics in this example, using the prometheus exporter)"
+msgstr ""
+
+#: docs_src/references/exporter-riemann.md:3
+msgid "![riemann exporter](images/riemann_exporter.png)"
+msgstr ""
+
+#: docs_src/references/exporter-riemann.md:7
+msgid ""
+"You can launch the Riemann exporter this way (running the default "
+"powercap_rapl sensor):"
+msgstr ""
+
+#: docs_src/references/exporter-riemann.md:43
+msgid ""
+"With default options values, the metrics are sent to http://localhost:5555 "
+"every 5 seconds"
+msgstr ""
+
+#: docs_src/references/exporter-riemann.md:45
+msgid ""
+"Use `--mtls` option to connect to a Riemann server using mTLS. In such case, "
+"you must provide the following parameters:"
+msgstr ""
+
+#: docs_src/references/exporter-riemann.md:46
+msgid "`--address` to specify the **fqdn** of the Riemann server."
+msgstr ""
+
+#: docs_src/references/exporter-riemann.md:47
+msgid "`--ca` to specify the CA that authenticate the Riemann server."
+msgstr ""
+
+#: docs_src/references/exporter-riemann.md:48
+msgid "`--cert` to specify the client certificate."
+msgstr ""
+
+#: docs_src/references/exporter-riemann.md:49
+msgid ""
+"`--key` to specify the **RSA** key to be used by the client certificate."
+msgstr ""
+
+#: docs_src/references/exporter-riemann.md:51
+msgid ""
+"Use `-q` or `--qemu` option if you are running scaphandre on a hypervisor. "
+"In that case a label with the vm name will be added to all `qemu-system*` "
+"processes. This will allow to easily create charts consumption for each vm "
+"and defined which one is the top contributor."
+msgstr ""
+
+#: docs_src/references/exporter-riemann.md:54
+msgid ""
+"_Troubleshooting note:_ run  Scaphandre using `-vv` parameter. If Scaphandre "
+"is stuck on the `Send data` log event, ensure you are connecting the Riemann "
+"server using a TLS port (5554 in the below example). As a reference here is "
+"a Riemann configuration:"
+msgstr ""
+
+#: docs_src/references/exporter-riemann.md:96
+msgid ""
+"There is only one exception about `process_power_consumption_microwatts` "
+"each process has a service name "
+"`process_power_consumption_microwatts_pid_exe`."
+msgstr ""
+
+#: docs_src/references/exporter-riemann.md:98
+msgid ""
+"As an example, process consumption can be retrieved using the following "
+"Riemann query:"
+msgstr ""
+
+#: docs_src/references/exporter-stdout.md:5
+msgid ""
+"You can launch the stdout exporter this way (running the default "
+"powercap_rapl sensor):"
+msgstr ""
+
+#: docs_src/references/exporter-stdout.md:10
+msgid ""
+"Default behavior is to measure and show metrics periodically during 10 "
+"seconds. You can change that timeout with `-t`. A value of `-t 0` will "
+"display top consumers infinitely and must be interrupted with ctrl-c."
+msgstr ""
+
+#: docs_src/references/exporter-stdout.md:13
+msgid "Here is how to display metrics during one minute:"
+msgstr ""
+
+#: docs_src/references/exporter-stdout.md:18
+msgid ""
+"You can change as well the step measure duration with `-s`. Here is how to "
+"display metrics during one minutes with a 5s step:"
+msgstr ""
+
+#: docs_src/references/exporter-stdout.md:23
+msgid ""
+"You can change the number of top consumers displayed with `-p`. Here is how "
+"to display the first 20 top consumers:"
+msgstr ""
+
+#: docs_src/references/exporter-stdout.md:28
+msgid ""
+"You can filter the processes to display with `-r`. A warning will be risen "
+"if this option is used with `-p` at the same time. In such case, `-p` "
+"behavior is disabled."
+msgstr ""
+
+#: docs_src/references/exporter-stdout.md:31
+msgid ""
+"The `-r` expected parameter is a regular expression. Details can be found "
+"[here](https://docs.rs/regex/1.4.5/regex/#syntax) and tested [here](https://"
+"rustexp.lpil.uk/)."
+msgstr ""
+
+#: docs_src/references/exporter-stdout.md:33
+msgid "Here is how to display power data for the 'scaphandre' process:"
+msgstr ""
+
+#: docs_src/references/exporter-stdout.md:38
+#: docs_src/references/exporter-warp10.md:37
+msgid ""
+"Metrics provided Scaphandre are documented [here](references/metrics.md). "
+msgstr ""
+
+#: docs_src/references/exporter-stdout.md:40
+msgid ""
+"Since 1.0.0 the flag `--raw-metrics` displays all metrics available for the "
+"host, as a parseable list. This might be useful to list metrics that you "
+"would like to fetch afterwards in your monitoring dashboard. Without this "
+"flag enabled, Stdout exporter has it's own format and might not show you all "
+"available metrics."
+msgstr ""
+
+#: docs_src/references/exporter-warp10.md:3
+msgid "![warp10 exporter](images/warp10.png)"
+msgstr ""
+
+#: docs_src/references/exporter-warp10.md:7
+msgid ""
+"You can launch the Warp10 exporter this way (running the default "
+"powercap_rapl sensor):"
+msgstr ""
+
+#: docs_src/references/exporter-warp10.md:11
+msgid ""
+"You need a token to be able to push data to a [warp10](https://warp10.io) "
+"instance. The `SCAPH_WARP10_WRITE_TOKEN` env var can be used to make it "
+"available to scaphandre. Please refer to the warp10 documentation to know "
+"how to get the token in the first place."
+msgstr ""
+
+#: docs_src/references/exporter-warp10.md:17
+msgid ""
+"```\n"
+"Expose the metrics to a Warp10 host, through HTTP\n"
+"\n"
+"Usage: scaphandre warpten [OPTIONS]\n"
+"\n"
+"Options:\n"
+"  -H, --host <HOST>                FQDN or IP address of the Warp10 instance "
+"[default: localhost]\n"
+"  -p, --port <PORT>                TCP port of the Warp10 instance [default: "
+"8080]\n"
+"  -S, --scheme <SCHEME>            \"http\" or \"https\" [default: http]\n"
+"  -t, --write-token <WRITE_TOKEN>  Auth token to write data to Warp10. If "
+"not specified, you must set the env variable SCAPH_WARP10_WRITE_TOKEN\n"
+"  -s, --step <SECONDS>             Interval between two measurements, in "
+"seconds [default: 2]\n"
+"  -q, --qemu                       Apply labels to metrics of processes "
+"looking like a Qemu/KVM virtual machine\n"
+"  -h, --help                       Print help\n"
+"```"
+msgstr ""
+
+#: docs_src/references/exporter-warp10.md:32
+msgid ""
+"With default options values, the metrics are sent to http://localhost:8080 "
+"every 60 seconds"
+msgstr ""
+
+#: docs_src/references/sensor-msr_rapl.md:3
+#: docs_src/references/sensor-powercap_rapl.md:3
+msgid "Pre-requesites"
+msgstr ""
+
+#: docs_src/references/sensor-msr_rapl.md:5
+#: docs_src/references/sensor-powercap_rapl.md:5
+msgid "At the time those lines are written, this sensor works only on:"
+msgstr ""
+
+#: docs_src/references/sensor-msr_rapl.md:7
+msgid "OS: Windows 10/Windows Server 2016, Windows Server 2019"
+msgstr ""
+
+#: docs_src/references/sensor-msr_rapl.md:8
+#: docs_src/references/sensor-powercap_rapl.md:8
+msgid ""
+"Intel and AMD x86 CPUs, produced after 2012 (or some laptop cpu prior to "
+"2012)"
+msgstr ""
+
+#: docs_src/references/sensor-msr_rapl.md:10
+msgid ""
+"This sensor needs the [RAPL MSR-based driver](https://github.com/hubblo-org/"
+"windows-rapl-driver/) to be installed."
+msgstr ""
+
+#: docs_src/references/sensor-msr_rapl.md:14
+#: docs_src/references/sensor-powercap_rapl.md:25
+msgid "To explicitely call the powercap_rapl sensor from the command line use:"
+msgstr ""
+
+#: docs_src/references/sensor-msr_rapl.md:18
+#: docs_src/references/sensor-powercap_rapl.md:29
+msgid "You can see arguments available from the cli for this sensors with:"
+msgstr ""
+
+#: docs_src/references/sensor-msr_rapl.md:22
+#: docs_src/references/sensor-powercap_rapl.md:37
+msgid "Please refer to doc.rs code documentation for more details."
+msgstr ""
+
+#: docs_src/references/sensor-msr_rapl.md:24
+#: docs_src/references/sensor-powercap_rapl.md:39
+msgid "Options available"
+msgstr ""
+
+#: docs_src/references/sensor-msr_rapl.md:26
+#: docs_src/references/sensor-msr_rapl.md:30
+#: docs_src/references/sensor-msr_rapl.md:34
+msgid "TODO"
+msgstr ""
+
+#: docs_src/references/sensor-msr_rapl.md:28
+#: docs_src/references/sensor-powercap_rapl.md:44
+msgid "Environment variables"
+msgstr ""
+
+#: docs_src/references/sensor-powercap_rapl.md:1
+msgid "Powercap_rapl sensor"
+msgstr ""
+
+#: docs_src/references/sensor-powercap_rapl.md:7
+msgid "OS: GNU/Linux"
+msgstr ""
+
+#: docs_src/references/sensor-powercap_rapl.md:10
+msgid "It needs the following kernel modules to be present and running:"
+msgstr ""
+
+#: docs_src/references/sensor-powercap_rapl.md:12
+msgid "On kernels 5.0 or later: `intel_rapl_common`"
+msgstr ""
+
+#: docs_src/references/sensor-powercap_rapl.md:14
+msgid "On kernel prior 5.0: `intel_rapl`"
+msgstr ""
+
+#: docs_src/references/sensor-powercap_rapl.md:16
+msgid ""
+"For AMD processors, it seems that powercap/rapl [will work only since kernel "
+"5.8](https://www.phoronix.com/scan.php?page=news_item&px=Google-Zen-RAPL-"
+"PowerCap) and [5.11 for family 19h](https://www.phoronix.com/scan.php?"
+"page=news_item&px=AMD-RAPL-Linux-Now-19h)."
+msgstr ""
+
+#: docs_src/references/sensor-powercap_rapl.md:19
+msgid ""
+"Energy consumption data can be directly collected on a **physical machine** "
+"only."
+msgstr ""
+
+#: docs_src/references/sensor-powercap_rapl.md:21
+msgid ""
+"To collect energy consumption on a virtual machine, you may first collect "
+"power consumption data from the hypervisor thanks to the [qemu exporter]"
+"(exporter-qemu.md) and then collect those metrics in the virtual machine "
+"thanks to this sensor, with `--vm` flag enabled."
+msgstr ""
+
+#: docs_src/references/sensor-powercap_rapl.md:33
+msgid "If running in a virtual machine:"
+msgstr ""
+
+#: docs_src/references/sensor-powercap_rapl.md:41
+msgid ""
+"`sensor-buffer-per-socket-max-kB`: Maximum memory size allowed, in "
+"KiloBytes, for storing energy consumption for each socket"
+msgstr ""
+
+#: docs_src/references/sensor-powercap_rapl.md:42
+msgid ""
+"`sensor-buffer-per-domain-max-kB`: Maximum memory size allowed, in "
+"KiloBytes, for storing energy consumption for each domain"
+msgstr ""
+
+#: docs_src/references/sensor-powercap_rapl.md:46
+msgid ""
+"If in `--vm` mode, you want to read metrics from another path than the "
+"default `/var/scaphandre`, set env var `SCAPHANDRE_POWERCAP_PATH` with the "
+"desired path."
+msgstr ""
+
+#: docs_src/references/sensor-powercap_rapl.md:50
+msgid ""
+"When running scaphandre on Ubuntu 20.xx I get a `permission denied` error"
+msgstr ""
+
+#: docs_src/references/sensor-powercap_rapl.md:52
+msgid ""
+"Since linux kernel package 5.4.0-53.59 in debian/ubuntu, powercap attributes "
+"are only accessible by root:"
+msgstr ""
+
+#: docs_src/references/sensor-powercap_rapl.md:59
+msgid ""
+"Therefor, the user running scaphandre needs to have read access to "
+"_energy_uj_ files in `/sys/class/powercap`."
+msgstr ""
+
+#: docs_src/references/sensor-powercap_rapl.md:61
+msgid ""
+"You can run the [init.sh](../../init.sh) script to apply appropriate "
+"permissions to the required files."
+msgstr ""
+
+#: docs_src/why.md:1
+msgid "Why ?"
+msgstr ""
+
+#: docs_src/why.md:3
+msgid ""
+"We are facing the biggest challenge of mankind history: to make our "
+"activities sustainable enough to not jeopardize our future."
+msgstr ""
+
+#: docs_src/why.md:5
+msgid ""
+"![Global average temperature anomaly](https://bpetit.nce.re/temperature-"
+"anomaly.svg)"
+msgstr ""
+
+#: docs_src/why.md:7
+msgid ""
+"To match the Paris agreement objective of not going further than +2 Celcius "
+"degrees on average in 2100, we need to transform our industries. The tech "
+"industry is no exception and we need to make sure that its benefits are not "
+"cancelled (or worse) by its negative impact."
+msgstr ""
+
+#: docs_src/why.md:10
+msgid ""
+"Measuring power consumption in tech services infrastructures is not as easy "
+"as it seems. We often rely on physical devices to do that and need to build "
+"in-house data pipelines to get those metrics useful. Furthermore this "
+"doesn't give fine graned data regarding applications/processes power "
+"consumption but only the host power consumption. This is even harder in a "
+"virtualization environement or as public cloud customers."
+msgstr ""
+
+#: docs_src/why.md:13
+msgid ""
+"Even [recent](https://www.iea.org/reports/data-centres-and-data-transmission-"
+"networks) [scientific](https://www.actu-environnement.com/media/pdf/"
+"news-36483-etude-UE-consommation-energie-centre-donnees-cloud.pdf) "
+"researches about tech energy consumption rely on statistical, both large and "
+"narrowed scale, assumptions based data (because it's all we got). Despite "
+"their weaknesses, they also all agree on the fact that the current "
+"consumption of datacenters and the Internet will increase drastically in the "
+"following years."
+msgstr ""
+
+#: docs_src/why.md:15
+msgid ""
+"Scaphandre aims to initiate a collaboration of tech companies and "
+"enthusiasts to provide an easy, lightweight, robust and well understood way "
+"to precisely measure the energy consumption and make it useful to take "
+"soberness decisions."
+msgstr ""
+
+#: docs_src/why.md:17
+msgid ""
+"Note that the greenhouse gazes emissions related to this energy consumption "
+"depends on the energetic mix of your country. You may find valuable data "
+"about that on [Electricity Map](https://www.electricitymap.org/map)."
+msgstr ""
+
+#: docs_src/compatibility.md:1
+msgid "Compatibility"
+msgstr ""
+
+#: docs_src/compatibility.md:3
+msgid ""
+"Scaphandre intends to provide multiple ways to gather power consumption "
+"metrics and make understanding tech services footprint possible in many "
+"situations. Depending on how you use scaphandre, you may have some "
+"restrictions."
+msgstr ""
+
+#: docs_src/compatibility.md:5
+msgid ""
+"To summarize, scaphandre should provide two ways to estimate the power "
+"consumption of a service, process or machine. Either by **measuring it**, "
+"using software interfaces that give access to hardware metrics, or by "
+"**estimating it** if measuring is not an option (this is a [planned feature]"
+"(https://github.com/hubblo-org/scaphandre/issues/25), not yet implemented as "
+"those lines are written, in december 2020)."
+msgstr ""
+
+#: docs_src/compatibility.md:7
+msgid ""
+"In scaphandre, the code responsible to collect the power consumption data "
+"before any further processing is grouped in components called **sensors**. "
+"If you want more details about scaphandre structure, [here are the "
+"explanations](explanations/internal-structure.md)."
+msgstr ""
+
+#: docs_src/compatibility.md:9
+msgid ""
+"On GNU/Linux [PowercapRAPL sensor](references/sensor-powercap_rapl.md) "
+"enables you to measure the power consumption, but it doesn't work in all "
+"contexts."
+msgstr ""
+
+#: docs_src/compatibility.md:11
+msgid ""
+"On Windows, [the MsrRAPL sensor](references/sensor-msr_rapl.md), coupled "
+"with the [driver responsible to read RAPL MSR's](https://github.com/hubblo-"
+"org/windows-rapl-driver/) enables you to do (almost) the same."
+msgstr ""
+
+#: docs_src/compatibility.md:13
+msgid "Sensor"
+msgstr ""
+
+#: docs_src/compatibility.md:13
+msgid "Intel x86 bare metal"
+msgstr ""
+
+#: docs_src/compatibility.md:13
+msgid "AMD x86 bare metal"
+msgstr ""
+
+#: docs_src/compatibility.md:13
+msgid "ARM bare metal"
+msgstr ""
+
+#: docs_src/compatibility.md:13
+msgid "Virtual Machine"
+msgstr ""
+
+#: docs_src/compatibility.md:13
+msgid "Public cloud instance"
+msgstr ""
+
+#: docs_src/compatibility.md:13
+msgid "Container"
+msgstr ""
+
+#: docs_src/compatibility.md:15
+msgid "PowercapRAPL (GNU/Linux only)"
+msgstr ""
+
+#: docs_src/compatibility.md:15
+msgid "[Yes](references/sensor-powercap_rapl.md)"
+msgstr ""
+
+#: docs_src/compatibility.md:15
+msgid "Yes ⚠️  kernel > 5.11 required"
+msgstr ""
+
+#: docs_src/compatibility.md:15
+msgid "We don't know yet"
+msgstr ""
+
+#: docs_src/compatibility.md:15
+msgid ""
+"Yes, if on a qemu/KVM hypervisor that runs scaphandre and the [Qemu exporter]"
+"(references/exporter-qemu.md)"
+msgstr ""
+
+#: docs_src/compatibility.md:15 docs_src/compatibility.md:16
+msgid "No, until your cloud provider uses scaphandre on its hypervisors"
+msgstr ""
+
+#: docs_src/compatibility.md:15
+msgid "[Depends on what you want](explanations/about-containers.md)"
+msgstr ""
+
+#: docs_src/compatibility.md:16
+msgid "MsrRAPL (Windows only)"
+msgstr ""
+
+#: docs_src/compatibility.md:16
+msgid "Yes"
+msgstr ""
+
+#: docs_src/compatibility.md:16
+msgid ""
+"Probable yes (not tested yet, if you have windows operated AMD gear, please "
+"consider [contributing](contributing.md)"
+msgstr ""
+
+#: docs_src/compatibility.md:16
+msgid "No"
+msgstr ""
+
+#: docs_src/compatibility.md:16
+msgid ""
+"Not yet, depends on improvements on the MsrRAPL sensors and overall windows/"
+"hypervisors support in Scaphandre"
+msgstr ""
+
+#: docs_src/compatibility.md:16
+msgid ""
+"Might work, not tested yet. If you want to join us in this journey, please "
+"consider [contributing](contributing.md)"
+msgstr ""
+
+#: docs_src/compatibility.md:17
+msgid "Future estimation based sensor"
+msgstr ""
+
+#: docs_src/compatibility.md:17
+msgid "Future Yes"
+msgstr ""
+
+#: docs_src/compatibility.md:19
+msgid "Checking RAPL is available on your CPU"
+msgstr ""
+
+#: docs_src/compatibility.md:21
+msgid ""
+"Sensors including \"RAPL\" in their name rely on [RAPL](explanations/rapl-"
+"domains.md)."
+msgstr ""
+
+#: docs_src/compatibility.md:23
+msgid ""
+"The `pts` and `pln` feature flags (\"Intel Package Thermal Status\" and "
+"\"Intel Power Limit Notification\" respectively) seem to indicate that RAPL "
+"is supported on a CPU. On GNU/Linux, you could be sure of their presence, if "
+"this command succeds and matches :"
+msgstr ""
+
+#: docs_src/compatibility.md:25
+msgid ""
+"```\n"
+"egrep \"(pts|pln)\" /proc/cpuinfo\n"
+"```"
+msgstr ""
+
+#: docs_src/troubleshooting.md:3
+msgid ""
+"I get a **permission denied** error when I run scaphandre, no matter what is "
+"the exporter"
+msgstr ""
+
+#: docs_src/troubleshooting.md:5
+msgid ""
+"On some Linux distributions (ubuntu 20.04 for sure), the energy counters "
+"files that the [PowercapRAPL sensor](references/sensor-powercap_rapl.md) "
+"uses, are owned by root. (since late 2020)"
+msgstr ""
+
+#: docs_src/troubleshooting.md:7
+msgid ""
+"To ensure this is your issue and fix that quickly you can run the [init.sh]"
+"(https://raw.githubusercontent.com/hubblo-org/scaphandre/main/init.sh) "
+"script:"
+msgstr ""
+
+#: docs_src/troubleshooting.md:11
+msgid "Then run scaphandre. If it does not work, the issue is somewhere else."
+msgstr ""
+
+#: docs_src/troubleshooting.md:13
+msgid ""
+"I get a **no such device** error, the intel_rapl of intel_rapl_common kernel "
+"modules are present"
+msgstr ""
+
+#: docs_src/troubleshooting.md:15
+msgid ""
+"It can mean that your cpu doesn't support RAPL. Please refer to the "
+"[compatibility](compatibility.md) section to be sure."
+msgstr ""
+
+#: docs_src/troubleshooting.md:17
+msgid ""
+"I can't mount the required kernel modules, getting a `Could'nt find XXX "
+"modules` error"
+msgstr ""
+
+#: docs_src/troubleshooting.md:19
+msgid ""
+"If you are in a situation comparable to [this one](https://github.com/hubblo-"
+"org/scaphandre/issues/59), you may need to install additional packages."
+msgstr ""
+
+#: docs_src/troubleshooting.md:21
+msgid ""
+"On ubuntu 20.01 and 20.10, try to install `linux-modules-extra-$(uname -r)` "
+"with apt. Then you should be able to `modprobe intel_rapl_common`."
+msgstr ""
+
+#: docs_src/troubleshooting.md:23
+msgid "On an AMD cpu machine, I get the following stracktrace"
+msgstr ""
+
+#: docs_src/troubleshooting.md:52
+msgid ""
+"We verified that scaphandre (and especially the powercap_rapl sensor) works "
+"on AMD Zen processors with a Linux kernel **5.11 or later**. Before that "
+"kernel version, it won't probably work as the [drivers](https://www.phoronix."
+"com/scan.php?page=news_item&px=AMD-Zen-PowerCap-RAPL-5.11) needed to feed "
+"powercap with rapl data are not present."
+msgstr ""
+
+#: docs_src/troubleshooting.md:54
+msgid "Trying to build the project I get this error"
+msgstr ""
+
+#: docs_src/troubleshooting.md:64
+msgid "You need compiling tooling. On Ubuntu/Debian, run:"
+msgstr ""
+
+#: docs_src/contributing.md:1
+msgid "Contributing guide"
+msgstr ""
+
+#: docs_src/contributing.md:3
+msgid ""
+"If you are reading this, you may be  to contribute. Just for that, a big "
+"thank you ! 👏"
+msgstr ""
+
+#: docs_src/contributing.md:5
+msgid ""
+"Feel free to propose pull requests, or open new [discussions](https://github."
+"com/hubblo-org/scaphandre/discussions) or [issues](https://github.com/hubblo-"
+"org/scaphandre/issues) at will. Scaphandre is a collaborative project and "
+"all opinions and propositions shall be heard and studied. The contributions "
+"will be received with kindness, gratitude and with an open mind. Remember "
+"that we are all [dwarfs standing on the shoulders of giants](https://en."
+"wikipedia.org/wiki/Standing_on_the_shoulders_of_giants). We all have to "
+"learn from others and to give back, with due mutual respect."
+msgstr ""
+
+#: docs_src/contributing.md:6
+msgid "Code of conduct"
+msgstr ""
+
+#: docs_src/contributing.md:8
+msgid ""
+"This project adheres to the Rust Code of Conduct, which [can be found here]"
+"(https://www.rust-lang.org/conduct.html)."
+msgstr ""
+
+#: docs_src/contributing.md:9
+msgid "Ways to contribute"
+msgstr ""
+
+#: docs_src/contributing.md:11
+msgid "Contributions may take multiple forms:"
+msgstr ""
+
+#: docs_src/contributing.md:12
+msgid "💻 **code**, of course, but not only (there is a lot more !)"
+msgstr ""
+
+#: docs_src/contributing.md:13
+msgid ""
+"📖 **documentation** : [here](#edit-and-build-the-documentation) is a guide "
+"to edit and build the documentation"
+msgstr ""
+
+#: docs_src/contributing.md:14
+msgid ""
+"🎤 Any help on **communication**: writing blog posts, speaking about "
+"scaphandre in conferences, speaking and writing about the responsibility of "
+"tech to be sustainable as well !"
+msgstr ""
+
+#: docs_src/contributing.md:15
+msgid ""
+"🧬 **structuring the project** and the **community** is also a very "
+"important topic. Feel free to propose help, or start [discussions](https://"
+"github.com/hubblo-org/scaphandre/discussions) about that."
+msgstr ""
+
+#: docs_src/contributing.md:17
+msgid ""
+"This project intends to unite a lot of people to have a lot of positive "
+"impact. Any action going helping us to get there will be very much "
+"appreciated ! 🎉"
+msgstr ""
+
+#: docs_src/contributing.md:18
+msgid "Contact"
+msgstr ""
+
+#: docs_src/contributing.md:20
+msgid ""
+"Discussions and questions about the project are welcome on [gitter](https://"
+"gitter.im/hubblo-org/scaphandre?"
+"utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) "
+"or by [email](mailto://bpetit@hubblo.org?Subject=About%20Scaphandre)."
+msgstr ""
+
+#: docs_src/contributing.md:21
+msgid "Contribution guidelines"
+msgstr ""
+
+#: docs_src/contributing.md:23
+msgid ""
+"This project intends to use [conventional commit messages](https://"
+"conventionalcommits.org/) and the [gitflow](https://nvie.com/posts/a-"
+"successful-git-branching-model/) workflow."
+msgstr ""
+
+#: docs_src/contributing.md:25
+msgid "Please open your pull requests on the **dev** branch :)"
+msgstr ""
+
+#: docs_src/contributing.md:27
+msgid ""
+"Scaphandre is a not only a tool, but a framework. Modules dedicated to "
+"collect energy consumption data from the host are called [**Sensors**]"
+"(explanations/internal-structure.md#sensors). Modules that are dedicated to "
+"send this data to a given channel or remote system are called [**Exporters**]"
+"(explanations/internal-structure.md#exporters). New Sensors and Exporters "
+"are going to be created and all contributions are welcome. For more on the "
+"internal structure please jump [here](explanations/internal-structure.md)."
+msgstr ""
+
+#: docs_src/contributing.md:30
+msgid "Edit and build the documentation"
+msgstr ""
+
+#: docs_src/contributing.md:32
+msgid ""
+"Documentation source files are in `docs_src`, edit the content there and "
+"propose pull-requests on the scaphandre repository as if it was a code pull-"
+"request."
+msgstr ""
+
+#: docs_src/contributing.md:34
+msgid ""
+"Here is how to build and publish the documentation after a change. First "
+"download [mdbook](https://github.com/rust-lang/mdBook), the static site "
+"generator we use for the [documentation website](https://hubblo-org.github."
+"io/scaphandre-documentation):"
+msgstr ""
+
+#: docs_src/contributing.md:38
+msgid ""
+"Then fork the [scaphandre-documentation](https://github.com/hubblo-org/"
+"scaphandre-documentation) repository and clone the resulting repository "
+"locally."
+msgstr ""
+
+#: docs_src/contributing.md:40
+msgid ""
+"Place the resulting documentation folder next to scaphandre's folder. Then "
+"run the build:"
+msgstr ""
+
+#: docs_src/contributing.md:44
+msgid ""
+"You should then have the result in `scaphandre-documentation/docs`. Commit, "
+"push and propose a PR to publish the changes."
+msgstr ""
+
+#: docs_src/contributing.md:46
+msgid ""
+"You can also serve the current content locally to see your changes before "
+"commit:"
+msgstr ""
+
+#: docs_src/sources.md:1
+msgid "Additional references for documentation"
+msgstr ""
+
+#: docs_src/sources.md:3
+msgid "[/proc/stat explained](http://www.linuxhowtos.org/System/procstat.htm)"
+msgstr ""
+
+#: docs_src/sources.md:4
+msgid ""
+"[Gathering CPU utilization from /proc/stat](https://www.idnt.net/en-US/"
+"kb/941772)"
+msgstr ""
+
+#: docs_src/sources.md:5
+msgid ""
+"[proc filesystem documentation](https://www.mjmwired.net/kernel/"
+"Documentation/filesystems/proc.txt#1212)"
+msgstr ""
+
+#: docs_src/sources.md:6
+msgid "[CPU usage on Linux](https://www.opsdash.com/blog/cpu-usage-linux.html)"
+msgstr ""
+
+#: docs_src/sources.md:7
+msgid ""
+"[Using RAPL to read PP0 and DRAM energy on Haswell](https://community.intel."
+"com/t5/Software-Tuning-Performance/Using-RAPL-to-read-PP0-and-DRAM-energy-on-"
+"haswell/td-p/1076202)"
+msgstr ""
+
+#: docs_src/sources.md:8
+msgid "[RAPL reference](http://web.eece.maine.edu/~vweaver/projects/rapl/)"
+msgstr ""
+
+#: docs_src/sources.md:9
+msgid ""
+"[How to measure linux performance avoiding most typical mistakes: CPU]"
+"(https://ma.ttias.be/how-to-measure-linux-performance-avoiding-most-typical-"
+"mistakes-cpu/)"
+msgstr ""
+
+#: docs_src/sources.md:10
+msgid ""
+"[How to calculate cpu utilization](https://www.embedded.com/how-to-calculate-"
+"cpu-utilization/)"
+msgstr ""
+
+#: docs_src/sources.md:12
+msgid "Powercap/RAPL source code in the kernel"
+msgstr ""
+
+#: docs_src/sources.md:14
+msgid "arch/x86/events/intel/rapl.c"
+msgstr ""
+
+#: docs_src/sources.md:15
+msgid "drivers/powercap"
+msgstr ""
+
+#: docs_src/sources.md:17
+msgid "Topics to investigate"
+msgstr ""
+
+#: docs_src/sources.md:19
+msgid "[PSI](https://facebookmicrosites.github.io/psi/docs/overview)"
+msgstr ""
+
+#: docs_src/sources.md:20
+msgid ""
+"[Linux PSI by example](https://unixism.net/2019/08/linux-pressure-stall-"
+"information-psi-by-example/)"
+msgstr ""
+
+#: docs_src/sources.md:21
+msgid ""
+"[PSI - Pressure Stall Information](https://www.kernel.org/doc/html/latest/"
+"accounting/psi.html)"
+msgstr ""
+
+#: docs_src/sources.md:22
+msgid ""
+"[How to measure linux performance avoiding most typical mistakes: memory]"
+"(https://ma.ttias.be/how-to-measure-linux-performance-avoiding-most-typical-"
+"mistakes-memory/)"
+msgstr ""

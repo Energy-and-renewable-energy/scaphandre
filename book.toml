@@ -7,12 +7,18 @@ src = "docs_src"
 
 [build]
 build-dir = "../scaphandre-documentation/docs"
+extra-watch-dirs = ["po"]
 
 [rust]
 edition = "2018"
 
+# https://github.com/google/mdbook-i18n-helpers/blob/main/i18n-helpers/USAGE.md#building-a-translated-book
+[preprocessor.gettext]
+after = ["links"]
+
 [output.html]
 mathjax-support = false
+git-repository-url = "https://github.com/hubblo-org/scaphandre"
 site-url = "/docs/"
 
 [output.html.playground]

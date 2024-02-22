@@ -6,9 +6,14 @@
 
 You can launch the prometheus exporter this way (running the default powercap_rapl sensor):
 
-	scaphandre prometheus
+<!-- mdbook-xgettext:skip -->
+```
+scaphandre prometheus
+```
 
 As always exporter's options can be displayed with `-h`:
+
+<!-- mdbook-xgettext:skip -->
 ```
 	scaphandre prometheus -h
 	scaphandre-prometheus

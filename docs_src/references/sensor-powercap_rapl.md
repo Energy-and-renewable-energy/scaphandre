@@ -24,15 +24,24 @@ To collect energy consumption on a virtual machine, you may first collect power 
 
 To explicitely call the powercap_rapl sensor from the command line use:
 
-    scaphandre -s powercap_rapl EXPORTER # EXPORTER being the exporter name you want to use
+<!-- mdbook-xgettext:skip -->
+```
+scaphandre -s powercap_rapl EXPORTER # EXPORTER being the exporter name you want to use
+```
 
 You can see arguments available from the cli for this sensors with:
 
-    scaphandre -s powercap_rapl -h
+<!-- mdbook-xgettext:skip -->
+```
+scaphandre -s powercap_rapl -h
+```
 
 If running in a virtual machine:
 
-    scaphandre --vm -s powercap_rapl EXPORTER
+<!-- mdbook-xgettext:skip -->
+```
+scaphandre --vm -s powercap_rapl EXPORTER
+```
 
 Please refer to doc.rs code documentation for more details.
 

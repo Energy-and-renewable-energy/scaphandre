@@ -17,43 +17,64 @@ This is working on Qemu/KVM hypervisors only.
 
 The idea is to run the agent on the hypervisor, with the [qemu exporter](../references/exporter-qemu.md):
 
-    scaphandre qemu
+<!-- mdbook-xgettext:skip -->
+```
+scaphandre qemu
+```
 
 More examples for a production ready setup will be added soon (systemd service, docker container, ...). If you think the documentation needs a refresh now, please [contribute](https://github.com/hubblo-org/scaphandre/pulls) :)
     
 For each virtual machine you want to give access to its metrics, create a [tmpfs](https://en.wikipedia.org/wiki/Tmpfs) mountpoint:
 
-     mount -t tmpfs tmpfs_DOMAIN_NAME /var/lib/libvirt/scaphandre/DOMAIN_NAME -o size=5m
+<!-- mdbook-xgettext:skip -->
+```
+mount -t tmpfs tmpfs_DOMAIN_NAME /var/lib/libvirt/scaphandre/DOMAIN_NAME -o size=5m
+```
 
 In the definition of the virtual machine (here we are using libvirt), ensure you have a filesystem configuration to give access to the mountpoint:
 
-    virsh edit DOMAIN_NAME
+<!-- mdbook-xgettext:skip -->
+```
+virsh edit DOMAIN_NAME
+```
 
 Then add this filesystem configuration block inside the `<devices></devices>` block:
 
-    <filesystem type='mount' accessmode='passthrough'>
-        <driver type='virtiofs'/>
-        <source dir='/var/lib/libvirt/scaphandre/DOMAIN_NAME'/>
-        <target dir='scaphandre'/>
-        <readonly />
-    </filesystem>
+<!-- mdbook-xgettext:skip -->
+```
+<filesystem type='mount' accessmode='passthrough'>
+    <driver type='virtiofs'/>
+    <source dir='/var/lib/libvirt/scaphandre/DOMAIN_NAME'/>
+    <target dir='scaphandre'/>
+    <readonly />
+</filesystem>
+```
 
 Save and (re)start the virtual machine.
 
 If you get this error: "error: unsupported configuration: 'virtiofs' requires shared memory", you might add this configuration section to the `<domain>` section.
 
-    <memoryBacking>
-      <source type='memfd'/>
-      <access mode='shared'/>
-    </memoryBacking>
+<!-- mdbook-xgettext:skip -->
+```
+<memoryBacking>
+    <source type='memfd'/>
+    <access mode='shared'/>
+</memoryBacking>
+```
 
 Then connect to the virtual machine and mount the filesystem:
 
-     mount -t 9p -o trans=virtio scaphandre /var/scaphandre
+<!-- mdbook-xgettext:skip -->
+```
+mount -t 9p -o trans=virtio scaphandre /var/scaphandre
+```
 
 You can now run scaphandre to export the metrics with the exporter of your choice (here prometheus):
 
-     scaphandre --vm prometheus
+<!-- mdbook-xgettext:skip -->
+```
+scaphandre --vm prometheus
+```
 
 Please refer to the [qemu exporter](../references/exporter-qemu.md) reference for more details.
 

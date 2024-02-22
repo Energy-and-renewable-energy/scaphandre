@@ -4,8 +4,11 @@ If you'd like to try scaphandre and see the data in a decent visualization tool,
 
 Once you have cloned the repository, just move to the docker-compose folder and run the stack:
 
-    cd docker-compose
-    docker-compose up -d
+<!-- mdbook-xgettext:skip -->
+```
+cd docker-compose
+docker-compose up -d
+```
 
 Be warned: the sample stack runs scaphandre as a privileged container. Otherwise apparmor or equivalents might complain about ptrace calls on the host. See [#135](https://github.com/hubblo-org/scaphandre/issues/135).
 
@@ -17,4 +20,7 @@ The `process_filter` textbox on the top of the graph allows you to look at the p
 
 To remove the stack just run this command in the same folder:
 
-    docker-compose down
+<!-- mdbook-xgettext:skip -->
+```
+docker-compose down
+```

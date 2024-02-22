@@ -1,5 +1,8 @@
 # Introduction
 
+[English (en)](https://hubblo-org.github.io/scaphandre-documentation/index.html)
+| [Français (fr)](https://hubblo-org.github.io/scaphandre-documentation/fr/index.html)</p>
+
 <a href="https://github.com/hubblo-org/scaphandre/"><img src="scaphandre.svg" width="250px"/></a>
 
 Welcome on [Scaphandre](https://github.com/hubblo-org/scaphandre) documentation.

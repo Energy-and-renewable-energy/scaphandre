@@ -9,22 +9,31 @@ Note that this is still experimental. Metrics are already considered trustworthy
 
 1. Run the scaphandre with the qemu exporter on your bare metal hypervisor machine:
 
-		scaphandre qemu # this is suitable for a test, please run it as a systemd service for a production setup
+<!-- mdbook-xgettext:skip -->
+```
+scaphandre qemu # this is suitable for a test, please run it as a systemd service for a production setup
+```
 
 2. Default is to expose virtual machines metrics in `/var/lib/libvirt/scaphandre/${DOMAIN_NAME}` with `DOMAIN_NAME` being the libvirt domain name of the virtual machine.
 First create a tmpfs mount point to isolate metrics for that virtual machine:
 
-		mount -t tmpfs tmpfs_DOMAIN_NAME /var/lib/libvirt/scaphandre/DOMAIN_NAME -o size=10m
+<!-- mdbook-xgettext:skip -->
+```
+mount -t tmpfs tmpfs_DOMAIN_NAME /var/lib/libvirt/scaphandre/DOMAIN_NAME -o size=10m
+```
 
 3. Ensure you expose the content of this folder to the virtual machine by having this configuration in the xml configuration of the domain:
-    ```
-    		<filesystem type='mount' accessmode='passthrough'>
-    	      <driver type='virtiofs'/>
-    	      <source dir='/var/lib/libvirt/scaphandre/DOMAIN_NAME'/>
-    	      <target dir='scaphandre'/>
-    		  <readonly />
-    	    </filesystem>
-    ```
+
+<!-- mdbook-xgettext:skip -->
+```
+<filesystem type='mount' accessmode='passthrough'>
+    <driver type='virtiofs'/>
+    <source dir='/var/lib/libvirt/scaphandre/DOMAIN_NAME'/>
+    <target dir='scaphandre'/>
+    <readonly />
+</filesystem>
+```
+
     You can edit the vm properties using `sudo virsh edit <DOMAIN_NAME>` using your usual editor. But it is more convenient to use virtual-manager, as explained in the following screenshots.
 
     *It also helps to define the correct syntax which probably depends from the qemu version. You can check that the above configuration is slightly different form the one below*.
@@ -38,12 +47,18 @@ First create a tmpfs mount point to isolate metrics for that virtual machine:
     c. XML generated as a result:
     ![virtualmgr02](images/virtualmgr02.png)
 
-    4. Ensure the VM has been started once the configuration is applied, then mount the filesystem on the VM/guest:
+4. Ensure the VM has been started once the configuration is applied, then mount the filesystem on the VM/guest:
 
-    		mount -t 9p -o trans=virtio scaphandre /var/scaphandre
+<!-- mdbook-xgettext:skip -->
+```
+mount -t 9p -o trans=virtio scaphandre /var/scaphandre
+```
 
-    5. Still in the guest, run scaphandre in VM mode with the default sensor:
+5. Still in the guest, run scaphandre in VM mode with the default sensor:
 
-    		scaphandre --vm prometheus
+<!-- mdbook-xgettext:skip -->
+```
+scaphandre --vm prometheus
+```
 
-    6. Collect your virtual machine specific power usage metrics. (requesting http://VM_IP:8080/metrics in this example, using the prometheus exporter)
+6. Collect your virtual machine specific power usage metrics. (requesting http://VM_IP:8080/metrics in this example, using the prometheus exporter)

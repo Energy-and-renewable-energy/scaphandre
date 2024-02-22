@@ -6,10 +6,14 @@
 
 You can launch the Riemann exporter this way (running the default powercap_rapl sensor):
 
-	scaphandre riemann
+<!-- mdbook-xgettext:skip -->
+```
+scaphandre riemann
+```
 
 As always exporter's options can be displayed with `-h`:
 
+<!-- mdbook-xgettext:skip -->
 ```
 Expose the metrics to a Riemann server
 
@@ -51,6 +55,8 @@ This will allow to easily create charts consumption for each vm and defined whic
 
 *Troubleshooting note:* run  Scaphandre using `-vv` parameter. If Scaphandre is stuck on the `Send data` log event, ensure you are connecting the Riemann server using a TLS port (5554 in the below example).
 As a reference here is a Riemann configuration:
+
+<!-- mdbook-xgettext:skip -->
 ```
 ; -*- mode: clojure; -*-
 ; vim: filetype=clojure
@@ -92,6 +98,8 @@ Metrics provided Scaphandre are documented [here](references/metrics.md).
 There is only one exception about `process_power_consumption_microwatts` each process has a service name `process_power_consumption_microwatts_pid_exe`.
 
 As an example, process consumption can be retrieved using the following Riemann query:
+
+<!-- mdbook-xgettext:skip -->
 ```
 (service =~ "process_power_consumption_microwatts_%_firefox") or (service =~ "process_power_consumption_microwatts_%_scaphandre")
 ```
