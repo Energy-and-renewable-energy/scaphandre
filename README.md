@@ -70,3 +70,27 @@ In opposition to its name, scaphandre aims to be as light and clean as possible.
 
 If you like this project and would like to provide financial help, here's our [sponsoring page](https://github.com/sponsors/hubblo-org).
 Thanks a lot for considering it !
+
+## 📚 Build doc locally & translate
+
+- `cargo install mdbook` or see <https://rust-lang.github.io/mdBook/guide/installation.html>
+- `cargo install mdbook-i18n-helpers`
+- `cargo install mdbook-tera-backend`
+- `cd scaphandre`
+- `mdbook serve --port 3001` editing mode
+- `mdbook build` (create `../scaphandre-documentation/docs` directory)
+
+relire https://github.com/google/mdbook-i18n-helpers/blob/main/i18n-helpers/USAGE.md
+
+initier le fichier de traduction de base
+
+- `apt install gettext poedit`
+- `MDBOOK_OUTPUT='{"xgettext": {"pot-file": "messages.pot"}}' mdbook build -d po` qui génère le fichier `po/message.pot`
+- `msginit -i po/messages.pot -l fr -o po/fr.po` pour initier traduction en fr
+- `poedit po/fr.po` pour traduire/sauvegarder
+- `msgmerge --update po/fr.po po/messages.pot` pour mettre à jour le fichier po/fr.po selon message.pot 
+- `MDBOOK_BOOK__LANGUAGE=fr mdbook serve --port 3001`
+
+<!-- 
+https://github.com/google/mdbook-i18n-helpers/blob/main/i18n-helpers/USAGE.md 
+-->

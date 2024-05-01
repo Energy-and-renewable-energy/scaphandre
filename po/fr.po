@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Scaphandre documentation\n"
 "POT-Creation-Date: 2024-02-22T12:10:12+01:00\n"
-"PO-Revision-Date: 2024-02-22 14:01+0100\n"
+"PO-Revision-Date: 2024-02-23 16:02+0100\n"
 "Last-Translator: MINASSIAN Alban <alban.minassian@free.fr>\n"
 "Language-Team: French <traduc@traduc.org>\n"
 "Language: fr\n"
@@ -79,6 +79,8 @@ msgid ""
 "Install Scaphandre with only Prometheus-push exporter compiled, for "
 "Prometheus Push Gateway, on RHEL 8 and 9"
 msgstr ""
+"Installer Scaphandre avec seulement l'exportateur Prometheus-push compilé, "
+"pour Prometheus Push Gateway, sur RHEL 8 et 9"
 
 #: docs_src/SUMMARY.md:19
 msgid "Explanations"
@@ -87,85 +89,88 @@ msgstr "Explications"
 #: docs_src/SUMMARY.md:21
 msgid "Explanations about host level power and energy metrics"
 msgstr ""
+"Explications sur les mesures de puissance et d'énergie au niveau de l'hôte"
 
 #: docs_src/SUMMARY.md:22
 #: docs_src/explanations/how-scaph-computes-per-process-power-consumption.md:1
 msgid "How scaphandre computes per process power consumption"
-msgstr ""
+msgstr "Comment scaphandre calcule la consommation d'énergie par processus"
 
 #: docs_src/SUMMARY.md:23 docs_src/explanations/internal-structure.md:1
 msgid "Internal structure"
-msgstr ""
+msgstr "Structure interne"
 
 #: docs_src/SUMMARY.md:24 docs_src/explanations/about-containers.md:1
 msgid "About containers"
-msgstr ""
+msgstr "À propos des conteneurs"
 
 #: docs_src/SUMMARY.md:25
 msgid "About RAPL domains"
-msgstr ""
+msgstr "À propos des domaines RAPL"
 
 #: docs_src/SUMMARY.md:27
 msgid "References"
-msgstr ""
+msgstr "Références"
 
 #: docs_src/SUMMARY.md:29
 msgid "Metrics available"
-msgstr ""
+msgstr "Métriques disponibles"
 
 #: docs_src/SUMMARY.md:31 docs_src/explanations/internal-structure.md:18
 msgid "Exporters"
-msgstr ""
+msgstr "Exports"
 
 #: docs_src/SUMMARY.md:33 docs_src/references/exporter-json.md:1
 msgid "JSON exporter"
-msgstr ""
+msgstr "Export JSON"
 
 #: docs_src/SUMMARY.md:34 docs_src/references/exporter-prometheus.md:1
 msgid "Prometheus exporter"
-msgstr ""
+msgstr "Export Prometheus"
 
 #: docs_src/SUMMARY.md:35
 msgid "Prometheus-push exporter"
-msgstr ""
+msgstr "Export Prometheus-push"
 
 #: docs_src/SUMMARY.md:36 docs_src/references/exporter-qemu.md:1
 msgid "Qemu exporter"
-msgstr ""
+msgstr "Export Qemu"
 
 #: docs_src/SUMMARY.md:37 docs_src/references/exporter-riemann.md:1
 msgid "Riemann exporter"
-msgstr ""
+msgstr "Export Riemann"
 
 #: docs_src/SUMMARY.md:38 docs_src/references/exporter-stdout.md:1
 msgid "Stdout exporter"
-msgstr ""
+msgstr "Export Stdout"
 
 #: docs_src/SUMMARY.md:39 docs_src/references/exporter-warp10.md:1
 msgid "Warp10 exporter"
-msgstr ""
+msgstr "Export Warp10"
 
 #: docs_src/SUMMARY.md:41 docs_src/explanations/internal-structure.md:5
 msgid "Sensors"
-msgstr ""
+msgstr "Capteurs"
 
 #: docs_src/SUMMARY.md:43 docs_src/references/sensor-msr_rapl.md:1
 msgid "MSR_RAPL sensor"
-msgstr ""
+msgstr "Capteur MSR_RAPL"
 
 #: docs_src/SUMMARY.md:44
 msgid "PowercapRAPL sensor"
-msgstr ""
+msgstr "Capteur PowercapRAPL"
 
 #: docs_src/SUMMARY.md:45
 msgid "MSRRAPL sensor"
-msgstr ""
+msgstr "Capteur MSRRAPL"
 
 #: docs_src/SUMMARY.md:47
 msgid ""
 "Why this project ? Compatibility Troubleshooting Contributing guide External "
 "references you may be interested in"
 msgstr ""
+"Pourquoi ce projet ? Compatibilité Dépannage Guide des contributeurs "
+"Références externes susceptibles de vous intéresser"
 
 #: docs_src/index.md:5
 msgid ""
@@ -1793,7 +1798,7 @@ msgstr ""
 
 #: docs_src/references/metrics.md:1
 msgid "Metrics exposed by Scaphandre"
-msgstr ""
+msgstr "Métriques exposées par Scaphandre"
 
 #: docs_src/references/metrics.md:3
 msgid ""
@@ -1802,10 +1807,15 @@ msgid ""
 "(exporter-prometheus.md) exporter, all metrics have a HELP section provided "
 "on /metrics (or whatever suffix you choosed to expose them)."
 msgstr ""
+"Avec l'export [Stdout](exporter-stdout.md), vous pouvez voir toutes les "
+"métriques disponibles sur votre machine avec le flag `--raw-metrics`. Avec "
+"l'export [prometheus](exporter-prometheus.md), toutes les métriques ont une "
+"section HELP fournie sur /metrics (ou n'importe quel suffixe que vous avez "
+"choisi pour les exposer)."
 
 #: docs_src/references/metrics.md:6
 msgid "Here are some key metrics that you will most probably be interested in:"
-msgstr ""
+msgstr "Voici quelques indicateurs clés qui vous intéresseront probablement :"
 
 #: docs_src/references/metrics.md:8
 msgid ""
@@ -1815,6 +1825,12 @@ msgid ""
 "domains.md)) measurement if available, or a combination of RAPL PKG and DRAM "
 "domains + an estimation of other hardware componentes power usage."
 msgstr ""
+"`scaph_host_power_microwatts` : Agrégation de plusieurs mesures pour donner "
+"un aperçu de la consommation d'énergie de l'hôte entier, en microwatts "
+"(GAUGE). Il peut s'agir de la même mesure que RAPL PSYS (voir [RAPL domains]"
+"(../explanations/rapl-domains.md)) si elle est disponible, ou d'une "
+"combinaison des domaines RAPL PKG et DRAM + une estimation de la "
+"consommation d'énergie d'autres composants matériels."
 
 #: docs_src/references/metrics.md:9
 msgid ""
@@ -1824,24 +1840,35 @@ msgid ""
 "microwatts. PROCESS_EXE being the name of the executable and PROCESS_PID "
 "being the pid of the process. (GAUGE)"
 msgstr ""
+"`scaph_process_power_consumption_microwatts{exe=\"$PROCESS_EXE\","
+"pid=\"$PROCESS_PID\",cmdline=\"path/to/exe --and-maybe-options\"}` : "
+"Consommation d'énergie due au processus, mesurée au niveau de la topologie, "
+"en microwatts. PROCESS_EXE étant le nom de l'exécutable et PROCESS_PID étant "
+"le pid du processus. (GAUGE)"
 
 #: docs_src/references/metrics.md:11
 msgid ""
 "For more details on that metric labels, see [this section](#getting-per-"
 "process-data-with-scaph_process_-metrics)."
 msgstr ""
+"Pour plus de détails sur la signification de ces métriques, voir [cette "
+"section](#getting-per-process-data-with-scaph_process_-metrics)."
 
 #: docs_src/references/metrics.md:13
 msgid ""
 "And some more deep metrics that you may want if you need to make more "
 "complex calculations and data processing:"
 msgstr ""
+"Et d'autres mesures plus approfondies que vous pourriez souhaiter si vous "
+"devez effectuer des calculs et des traitements de données plus complexes :"
 
 #: docs_src/references/metrics.md:15
 msgid ""
 "`scaph_host_energy_microjoules` : Energy measurement for the whole host, as "
 "extracted from the sensor, in microjoules. (COUNTER)"
 msgstr ""
+"`scaph_host_energy_microjoules` : Mesure de l'énergie de l'hôte entier, "
+"telle qu'elle est extraite du capteur, en microjoules. (COMPTEUR)"
 
 #: docs_src/references/metrics.md:16
 msgid ""
@@ -1849,6 +1876,9 @@ msgid ""
 "relative to a CPU socket, in microwatts. SOCKET_ID being the socket "
 "numerical id (GAUGE)"
 msgstr ""
+"`scaph_socket_power_microwatts{socket_id=\"$SOCKET_ID\"}` : Mesure de la "
+"puissance relative à un socket CPU, en microwatts. SOCKET_ID étant "
+"l'identifiant numérique du socket (GAUGE)"
 
 #: docs_src/references/metrics.md:18
 msgid ""
@@ -1858,42 +1888,59 @@ msgid ""
 "`scaph_host_power_microwatts` is based on this PSYS counter if it is "
 "available."
 msgstr ""
+"Si votre machine fournit un domaine RAPL PSYS (voir [RAPL domains](../"
+"explanations/rapl-domains.md)), vous pouvez obtenir le compteur d'énergie "
+"brute pour PSYS/platform avec `scaph_host_rapl_psys_microjoules`. Notez que "
+"`scaph_host_power_microwatts` est basé sur ce compteur PSYS s'il est "
+"disponible."
 
 #: docs_src/references/metrics.md:20
 msgid "Since 1.0.0 the following host metrics are availalable as well ;"
 msgstr ""
+"Depuis la version 1.0.0, les métriques d'hôtes suivantes sont également "
+"disponibles ;"
 
 #: docs_src/references/metrics.md:22
 msgid "`scaph_host_swap_total_bytes`: Total swap space on the host, in bytes."
 msgstr ""
+"`scaph_host_swap_total_bytes` : L'espace de pagination total sur l'hôte, en "
+"octets."
 
 #: docs_src/references/metrics.md:23
 msgid ""
 "`scaph_host_swap_free_bytes`: Swap space free to be used on the host, in "
 "bytes."
 msgstr ""
+"`scaph_host_swap_free_bytes` : L'espace de pagination libre sur l'hôte, en "
+"octets."
 
 #: docs_src/references/metrics.md:24
 msgid ""
 "`scaph_host_memory_free_bytes`: Random Access Memory free to be used (not "
 "reused) on the host, in bytes."
 msgstr ""
+"`scaph_host_memory_free_bytes` : Mémoire vive libre d'être utilisée (non "
+"réutilisée) sur l'hôte, en octets."
 
 #: docs_src/references/metrics.md:25
 msgid ""
 "`scaph_host_memory_available_bytes`: Random Access Memory available to be re-"
 "used on the host, in bytes."
 msgstr ""
+"`scaph_host_memory_available_bytes` : Mémoire vive disponible pour être "
+"réutilisée sur l'hôte, en octets."
 
 #: docs_src/references/metrics.md:26
 msgid ""
 "`scaph_host_memory_total_bytes`: Random Access Memory installed on the host, "
 "in bytes."
 msgstr ""
+"`scaph_host_memory_total_bytes` : Mémoire vive installée sur l'hôte, en "
+"octets."
 
 #: docs_src/references/metrics.md:27
 msgid "`scaph_host_disk_total_bytes`: Total disk size, in bytes."
-msgstr ""
+msgstr "`scaph_host_disk_total_bytes` : Taille totale du disque, en octets."
 
 #: docs_src/references/metrics.md:28
 msgid "`scaph_host_disk_available_bytes`: Available disk space, in bytes."
