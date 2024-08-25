@@ -50,7 +50,7 @@ Use `--mtls` option to connect to a Riemann server using mTLS. In such case, you
 * `--cert` to specify the client certificate.
 * `--key` to specify the **RSA** key to be used by the client certificate.
 
-Use `-q` or `--qemu` option if you are running scaphandre on a hypervisor. In that case a label with the vm name will be added to all `qemu-system*` processes.
+Use `-q` or `--qemu` option if you are running scaphandre on a hypervisor. In that case a label with the vm name will be added to all `qemu-system*` processes
 This will allow to easily create charts consumption for each vm and defined which one is the top contributor.
 
 *Troubleshooting note:* run  Scaphandre using `-vv` parameter. If Scaphandre is stuck on the `Send data` log event, ensure you are connecting the Riemann server using a TLS port (5554 in the below example).
