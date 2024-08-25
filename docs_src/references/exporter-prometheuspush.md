@@ -35,4 +35,4 @@ With default options values, the metrics are sent to http://localhost:9091/metri
 
 Metrics exposed are the same as the Prometheus (pull mode) exporter.
 
-Push gateway's grouping key for each host is in the form `job/scaphandre/instance/${HOSTNAME}` with HOSTNAME being the hostname of the host sending metrics.
+Push gateway's grouping key for each host is in the form `job/scaphandre/instance/${HOSTNAME}` with HOSTNAME being the hostname of the host sending metrics
