@@ -1,4 +1,4 @@
-name: Build Debian package on release
+name: Build Mesloub package on release
 
 on:
   push:
