@@ -1,4 +1,4 @@
-# Prometheus exporter
+# Prometheus exporter.
 
 <img src="https://github.com/hubblo-org/scaphandre/raw/main/docs_src/screen-prometheus.cleaned.png">
 
