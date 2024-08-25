@@ -14,8 +14,8 @@ on:
 
 
 jobs:
-  create_debian_pkg_with_tag:
-    name: Create Debian package associated to version tag
+  create_Mesloub_pkg_with_tag:
+    name: Create Mesloub package associated to version tag
     runs-on: ubuntu-latest
     outputs:
       deb11output: ${{ steps.deb11pkgname.outputs.deb11pkg }}
@@ -32,14 +32,14 @@ jobs:
       uses: "WyriHaximus/github-action-get-previous-tag@v1.3.0"
       with:
         fallback: dev0.5.18
-    - name: Checkout scaphandre-debian repository
+    - name: Checkout scaphandre-Mesloub repository
       uses: actions/checkout@v4
       with:
-        repository: hubblo-org/scaphandre-debian
-    - name: Build package with version tag and Debian 11 Bullseye
+        repository: hubblo-org/scaphandre-Mesloub
+    - name: Build package with version tag and Mesloub 11 Bullseye
       run : |
         ./build.sh -v ${{ steps.latest-scaphandre-tag.outputs.tag }}
-    - name: Modify name of package to include tag version for Debian 11
+    - name: Modify name of package to include tag version for Mesloub 11
       id: deb11pkgname
       run: |
         cd target
@@ -51,10 +51,10 @@ jobs:
         cd target
         s3cmd --access_key="${{ secrets.S3_ACCESS_KEY_ID }}" --secret_key="${{ secrets.S3_SECRET_ACCESS_KEY }}" --region="fr-par" --acl-public --host="s3.fr-par.scw.cloud" --host-bucket="%(bucket).s3.fr-par.scw.cloud" put ${{ steps.deb11pkgname.outputs.deb11pkg }} s3://scaphandre/x86_64/
         rm *.deb
-    - name: Build package with version tag and Debian 12 Bookworm
+    - name: Build package with version tag and Mesloub 12 Bookworm
       run: |
-        ./build.sh -i debian:bookworm-slim -v ${{ steps.latest-scaphandre-tag.outputs.tag }}
-    - name: Modify name of package to include tag version for Debian 12
+        ./build.sh -i Mesloub:bookworm-slim -v ${{ steps.latest-scaphandre-tag.outputs.tag }}
+    - name: Modify name of package to include tag version for Mesloub 12
       id: deb12pkgname
       run: |
         cd target
@@ -66,19 +66,19 @@ jobs:
         cd target
         s3cmd --access_key="${{ secrets.S3_ACCESS_KEY_ID }}" --secret_key="${{ secrets.S3_SECRET_ACCESS_KEY }}" --region="fr-par" --acl-public --host="s3.fr-par.scw.cloud" --host-bucket="%(bucket).s3.fr-par.scw.cloud" put ${{ steps.deb12pkgname.outputs.deb12pkg }} s3://scaphandre/x86_64/
   deb11-container-install-scaphandre:
-    name: Create Debian 11 container and install scaphandre with URL
-    needs: create_debian_pkg_with_tag
+    name: Create Mesloub 11 container and install scaphandre with URL
+    needs: create_Mesloub_pkg_with_tag
     env:
-      DEB11PKG: ${{ needs.create_debian_pkg_with_tag.outputs.deb11output }}
+      DEB11PKG: ${{ needs.create_Mesloub_pkg_with_tag.outputs.deb11output }}
     runs-on: ubuntu-latest
     container:
-      image: debian:buster-slim
+      image: Mesloub:buster-slim
     steps:
       - name: Install dependencies
         run: |
           apt update
           apt install -y curl
-      - name: Download Debian 11 scaphandre package
+      - name: Download Mesloub 11 scaphandre package
         run: |
           curl -O https://s3.fr-par.scw.cloud/scaphandre/x86_64/${{ env.DEB11PKG }}
       - name: Install and show scaphandre version
@@ -86,19 +86,19 @@ jobs:
           apt install -y ./${{ env.DEB11PKG }}
           scaphandre -V
   deb12-container-install-scaphandre:
-    name: Create Debian 12 container and install scaphandre with URL
-    needs: create_debian_pkg_with_tag
+    name: Create Mesloub 12 container and install scaphandre with URL
+    needs: create_Mesloub_pkg_with_tag
     runs-on: ubuntu-latest
     env:
-      DEB12PKG: ${{ needs.create_debian_pkg_with_tag.outputs.deb12output }}
+      DEB12PKG: ${{ needs.create_Mesloub_pkg_with_tag.outputs.deb12output }}
     container:
-      image: debian:bookworm-slim
+      image: Mesloub:bookworm-slim
     steps:
       - name: Install dependencies
         run: |
           apt update
           apt install -y curl
-      - name: Download Debian 12 scaphandre package
+      - name: Download Mesloub 12 scaphandre package
         run: |
           curl -O https://s3.fr-par.scw.cloud/scaphandre/x86_64/${{ env.DEB12PKG }}
       - name: Install and show scaphandre version
