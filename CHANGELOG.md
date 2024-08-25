@@ -13,7 +13,7 @@ Please check dev branch.
 
 - Host resources consumption metrics : scaph_host_swap_total_bytes, scaph_host_swap_free_bytes, scaph_host_memory_free_bytes, scaph_host_memory_available_bytes, scaph_host_memory_total_bytes, scaph_host_disk_total_bytes, scaph_host_disk_available_bytes, scaph_host_cpu_frequency, scaph_host_load_avg_fifteen, scaph_host_load_avg_five, scaph_host_load_avg_one - see https://hubblo-org.github.io/scaphandre-documentation/references/metrics.html for details, https://github.com/hubblo-org/scaphandre/issues/271 and https://github.com/hubblo-org/scaphandre/pull/278 for reference
 - Per-process resource consumption metrics : scaph_process_cpu_usage_percentage, scaph_process_memory_bytes, scaph_process_memory_virtual_bytes, scaph_process_disk_total_write_bytes, scaph_process_disk_write_bytes, scaph_process_disk_read_bytes, scaph_process_disk_total_read_bytes - see https://hubblo-org.github.io/scaphandre-documentation/references/metrics.html for details, https://github.com/hubblo-org/scaphandre/issues/141 and https://github.com/hubblo-org/scaphandre/pull/274 for reference
-- Added service monitor to helm chart, see https://github.com/hubblo-org/scaphandre/pull/230, thanks @mmadoo
+- Added service monitor to helm chart, see https://github.com/hubblo-org/scaphandre/pull/230, thanks @mmadoo.
 - Added packaging folder with sample systemd services files, see https://github.com/hubblo-org/scaphandre/pull/317 and https://github.com/hubblo-org/scaphandre/issues/261, thanks @jcaesar
 - Added prometheus push mode exporter, see https://github.com/hubblo-org/scaphandre/issues/269
 - Added RPM build github action workflow, see https://github.com/hubblo-org/scaphandre/issues/310
