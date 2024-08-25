@@ -9,7 +9,7 @@ You can launch the stdout exporter this way (running the default powercap_rapl s
 scaphandre stdout
 ```
 
-Default behavior is to measure and show metrics periodically during 10 seconds. You can change that timeout with `-t`.
+Default behavior is to measure and show metrics periodically during 10 seconds. You can change that timeout with `-t`
 A value of `-t 0` will display top consumers infinitely and must be interrupted with ctrl-c.
 
 Here is how to display metrics during one minute:
