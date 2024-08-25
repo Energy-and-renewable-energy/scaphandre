@@ -1,6 +1,6 @@
 # Internal structure
 
-Scaphandre is designed to be extensible. As it performs basically two tasks: **collecting**/pre-computing the power consumption metrics and **publishing** it, it is composed of two main components: a **sensor** and an **exporter**. Each can be implemented in different ways to match a certain use case. When you run scaphandre from the command line, `-s` allows you to choose the sensor you want to use, and the next subcommand is the name of the exporter.
+Scaphandre is designed to be extensible. As it performs basically two tasks: **collecting**/pre-computing the power consumption metrics and **publishing** it, it is composed of two main components: a **sensor** and an **exporter**. Each can be implemented in different ways to match a certain use case. When you run scaphandre from the command line, `-s` allows you to choose the sensor you want to use, and the next subcommand is the name of the exporter
 
 ## Sensors
 
