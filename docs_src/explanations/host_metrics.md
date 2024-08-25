@@ -1,4 +1,4 @@
-# Explanations about host level power and energy metrics.
+# Explanations about host level power and energy metrics
 
 This is true starting **from Scaphandre >= 1.0.**
 
