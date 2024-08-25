@@ -13,7 +13,7 @@ scaphandre warp10
 
 You need a token to be able to push data to a [warp10](https://warp10.io) instance.
 The `SCAPH_WARP10_WRITE_TOKEN` env var can be used to make it available to scaphandre.
-Please refer to the warp10 documentation to know how to get the token in the first place.
+Please refer to the warp10 documentation to know how to get the token in the first place
 
 As always exporter's options can be displayed with `-h`:
 
