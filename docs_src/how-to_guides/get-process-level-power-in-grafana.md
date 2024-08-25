@@ -17,7 +17,10 @@ This is a prometheus metrics, so you have labels to filter on the processes you 
 
 If I want to get power consumption (in Watts) for all processes related to [nginx](https://nginx.org/) running on a host with ip 10.0.0.9 I may use that query, in grafana, based on the prometheus datasource:
 
-    scaph_process_power_consumption_microwatts{cmdline=~".*nginx.*", instance="10.0.0.9:8080"} / 1000000
+<!-- mdbook-xgettext:skip -->
+```
+scaph_process_power_consumption_microwatts{cmdline=~".*nginx.*", instance="10.0.0.9:8080"} / 1000000
+```
 
 Here we assume that scaphandre/the prometheus exporter is running on port number `8080`.
 

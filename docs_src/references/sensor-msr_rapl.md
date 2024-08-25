@@ -13,11 +13,17 @@ This sensor needs the [RAPL MSR-based driver](https://github.com/hubblo-org/wind
 
 To explicitely call the powercap_rapl sensor from the command line use:
 
-    scaphandre -s msr_rapl EXPORTER # EXPORTER being the exporter name you want to use
+<!-- mdbook-xgettext:skip -->
+```
+scaphandre -s msr_rapl EXPORTER # EXPORTER being the exporter name you want to use
+```
 
 You can see arguments available from the cli for this sensors with:
 
-    scaphandre -s msr_rapl -h
+<!-- mdbook-xgettext:skip -->
+```
+scaphandre -s msr_rapl -h
+```
 
 Please refer to doc.rs code documentation for more details.
 

@@ -22,6 +22,7 @@ Sensors including "RAPL" in their name rely on [RAPL](explanations/rapl-domains.
 
 The `pts` and `pln` feature flags ("Intel Package Thermal Status" and "Intel Power Limit Notification" respectively) seem to indicate that RAPL is supported on a CPU. On GNU/Linux, you could be sure of their presence, if this command succeds and matches :
 
+<!-- mdbook-xgettext:skip -->
 ```
 egrep "(pts|pln)" /proc/cpuinfo
 ```

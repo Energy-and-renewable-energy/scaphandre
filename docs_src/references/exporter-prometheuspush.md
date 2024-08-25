@@ -4,9 +4,13 @@
 
 You can launch the prometheus exporter this way:
 
-	scaphandre prometheus-push
+<!-- mdbook-xgettext:skip -->
+```
+scaphandre prometheus-push
+```
 
 As always exporter's options can be displayed with `-h`:
+<!-- mdbook-xgettext:skip -->
 ```
 	scaphandre prometheus-push -h
 	Push metrics to Prometheus Push Gateway

@@ -33,16 +33,25 @@ Documentation source files are in `docs_src`, edit the content there and propose
 
 Here is how to build and publish the documentation after a change. First download [mdbook](https://github.com/rust-lang/mdBook), the static site generator we use for the [documentation website](https://hubblo-org.github.io/scaphandre-documentation):
 
-    cargo install mdbook
+<!-- mdbook-xgettext:skip -->
+```
+cargo install mdbook
+```
 
 Then fork the [scaphandre-documentation](https://github.com/hubblo-org/scaphandre-documentation) repository and clone the resulting repository locally.
 
 Place the resulting documentation folder next to scaphandre's folder. Then run the build:
 
-    cd scaphandre && mdbook build
+<!-- mdbook-xgettext:skip -->
+```
+cd scaphandre && mdbook build
+```
 
 You should then have the result in `scaphandre-documentation/docs`. Commit, push and propose a PR to publish the changes.
 
 You can also serve the current content locally to see your changes before commit:
 
-    mdbook serve
+<!-- mdbook-xgettext:skip -->
+```
+mdbook serve
+```

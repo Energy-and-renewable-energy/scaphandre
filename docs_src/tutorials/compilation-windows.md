@@ -8,6 +8,7 @@ Once you have a working driver, you can compile Scaphandre, with the Rust for Wi
 
 For now, all Scaphandre features are not supported on windows. Use the following command line to build the binary :
 
+<!-- mdbook-xgettext:skip -->
 ```
 cargo build --no-default-features --features "prometheus json riemann"
 ```
