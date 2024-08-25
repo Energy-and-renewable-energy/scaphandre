@@ -1,7 +1,7 @@
 # Metrics exposed by Scaphandre
 
 With [Stdout](exporter-stdout.md) exporter, you can see all metrics available on your machine with flag `--raw-metrics`.
-With [prometheus](exporter-prometheus.md) exporter, all metrics have a HELP section provided on /metrics (or whatever suffix you choosed to expose them).
+With [prometheus](exporter-prometheus.md) exporter, all metrics have a HELP section provided on /metrics (or whatever suffix you choosed to expose them)
 
 Here are some key metrics that you will most probably be interested in:
 
