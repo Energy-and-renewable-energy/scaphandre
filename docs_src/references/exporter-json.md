@@ -77,4 +77,4 @@ As always exporter's options can be displayed with `-h`:
               Print help
 ```
 
-Metrics provided Scaphandre are documented [here](references/metrics.md).
+Metrics provided Scaphandre are documented [here](references/metrics.md)
