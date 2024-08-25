@@ -25,7 +25,7 @@ on:
   # this will almost certainly complete first). As a result you will publish
   # docs for the latest commit but the oranda landing page won't know about
   # the latest release. The workflow_run trigger below will properly wait for
-  # cargo-dist, and so this half-published state will only last for ~10 minutes.
+  # cargo-dist, and so this half-published state will only last for ~10 minutes
   #
   # If you only want docs to update with releases, disable this one.
   push:
