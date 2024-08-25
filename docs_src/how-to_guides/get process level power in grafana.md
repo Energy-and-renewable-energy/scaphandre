@@ -7,7 +7,7 @@ You need basically 3 components for that:
 - [prometheus](https://prometheus.io)
 - [grafana](https://grafana.com)
 
-We'll say that you already have a running prometheus server and an available grafana instance and that you have added prometheus as a datasource in grafana.
+We'll say that you already have a running prometheus server and an available grafana instance and that you have added prometheus as a datasource in grafana
 
 How to get metrics per process as you may see [here](https://metrics.hubblo.org) ?
 
