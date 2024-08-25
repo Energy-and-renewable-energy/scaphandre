@@ -30,7 +30,7 @@ chrono = "0.4"
 docker-sync = { version = "0.1.2", optional = true }
 k8s-sync = { version = "0.2.3", optional = true }
 hyper = { version = "0.14", features = ["full"], optional = true }
-tokio = { version = "1.26.0", features = ["full"], optional = true}
+tokio = { version = "1.29.1", features = ["full"], optional = true}
 sysinfo = { version = "0.28.3"}
 isahc = { version = "1.7.2", optional = true }
 
