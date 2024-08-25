@@ -1,6 +1,6 @@
 # Explanation on RAPL / Running Average Power Limit domains: what we (think we) know so far
 
-RAPL stands for "Running Average Power Limit", it is a feature on Intel/AMD x86 CPU's (manufactured after 2012) that allows to set limits on power used by the CPU and other components. This feature also allows to just get "measurements" (mind the double quotes, as at least part of the numbers RAPL gives are coming from estimations/modeling) of components power usage.
+RAPL stands for "Running Average Power Limit", it is a feature on Intel/AMD x86 CPU's (manufactured after 2012) that allows to set limits on power used by the CPU and other components. This feature also allows to just get "measurements" (mind the double quotes, as at least part of the numbers RAPL gives are coming from estimations/modeling) of components power usage
 
 ![RAPL domains](rapl.png)
 
